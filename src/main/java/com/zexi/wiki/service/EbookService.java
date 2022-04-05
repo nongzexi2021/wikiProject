@@ -5,7 +5,7 @@ import com.zexi.wiki.domain.EbookExample;
 import com.zexi.wiki.mapper.EbookMapper;
 import com.zexi.wiki.req.EbookReq;
 import com.zexi.wiki.resp.EbookResp;
-import org.springframework.beans.BeanUtils;
+import com.zexi.wiki.util.CopyUtil;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -24,13 +24,17 @@ public class EbookService {
         List<Ebook> ebookList =  ebookMapper.selectByExample(ebookExample);
 
         List<EbookResp> respList = new ArrayList<>();
-        for (Ebook ebook : ebookList) {
-            EbookResp ebookResp = new EbookResp();
-            BeanUtils.copyProperties(ebook, ebookResp);
-            respList.add(ebookResp);
-        }
+//        for (Ebook ebook : ebookList) {
+//            EbookResp ebookResp = new EbookResp();
+//            BeanUtils.copyProperties(ebook, ebookResp);
+                //对象复制
+//            EbookResp ebookResp = CopyUtil.copy(ebook, EbookResp.class);
+//            respList.add(ebookResp);
+//        }
 
-        return respList;
+        List<EbookResp> list = CopyUtil.copyList(ebookList, EbookResp.class);
+
+        return list;
 
     }
 }
