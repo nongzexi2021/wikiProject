@@ -4,7 +4,7 @@ package com.zexi.wiki.controller;
 import com.zexi.wiki.domain.EbookSaveReq;
 import com.zexi.wiki.req.EbookQueryReq;
 import com.zexi.wiki.resp.CommonResp;
-import com.zexi.wiki.resp.EbookResp;
+import com.zexi.wiki.resp.EbookQueryResp;
 import com.zexi.wiki.resp.PageResp;
 import com.zexi.wiki.service.EbookService;
 import org.springframework.web.bind.annotation.*;
@@ -21,8 +21,8 @@ public class EbookController {
 
     @GetMapping("/list")
     public CommonResp list(EbookQueryReq req) {
-        CommonResp<PageResp<EbookResp>> resp = new CommonResp<>();
-        PageResp<EbookResp> list = ebookService.list(req);
+        CommonResp<PageResp<EbookQueryResp>> resp = new CommonResp<>();
+        PageResp<EbookQueryResp> list = ebookService.list(req);
         resp.setContent(list);
         return resp;
     }
