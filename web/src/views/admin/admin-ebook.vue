@@ -39,7 +39,7 @@ export default defineComponent({
     const ebooks = ref();
     const pagination = ref({
       current: 1,
-      pageSize: 2,
+      pageSize: 4,
       total: 0
     });
     const loading = ref(false);
@@ -87,13 +87,18 @@ export default defineComponent({
      **/
     const handleQuery = (params: any) => {
       loading.value = true;
-      axios.get("/ebook/list", params).then((response) => {
+      axios.get("/ebook/list", {params: {
+        page: params.page,
+        size: params.size
+        }
+    }).then((response) => {
         loading.value = false;
         const data = response.data;
-        ebooks.value = data.content;
+        ebooks.value = data.content.list;
 
         // 重置分页按钮
         pagination.value.current = params.page;
+        pagination.value.total = data.content.total;
       });
     };
 
@@ -109,7 +114,11 @@ export default defineComponent({
     };
 
     onMounted(() => {
-      handleQuery({});
+      console.log("看看自带的分页参数有什么： " + pagination);
+      handleQuery({
+        page:1,
+        size: pagination.value.pageSize;
+      });
     });
 
     return {
