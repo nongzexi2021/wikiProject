@@ -88,3 +88,49 @@
 2022-04-06 17:31:26.273 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
 2022-04-06 17:31:26.352 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
 2022-04-06 17:31:26.846 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
+2022-04-06 17:53:13.137 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2022-04-06 17:53:13.140 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2022-04-06 17:53:13.148 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
+2022-04-06 17:53:18.288 INFO  com.zexi.wiki.config.WikiApplication              :55   [32m                  [0;39m Starting WikiApplication using Java 17.0.1 on Nongs-MacBook-Pro.local with PID 69074 (/Users/nongzexi/Desktop/temp/wiki/target/classes started by nongzexi in /Users/nongzexi/Desktop/temp/wiki)
+2022-04-06 17:53:18.288 INFO  com.zexi.wiki.config.WikiApplication              :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2022-04-06 17:53:18.497 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2022-04-06 17:53:18.498 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2022-04-06 17:53:18.498 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-04-06 17:53:18.498 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2022-04-06 17:53:18.507 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-04-06 17:53:18.507 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 215 ms
+2022-04-06 17:53:18.623 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2022-04-06 17:53:18.671 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2022-04-06 17:53:18.676 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2022-04-06 17:53:18.678 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2022-04-06 17:53:18.682 INFO  com.zexi.wiki.config.WikiApplication              :61   [32m                  [0;39m Started WikiApplication in 5.44 seconds (JVM running for 1342.849)
+2022-04-06 17:53:18.685 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-04-06 17:53:18.686 INFO  com.zexi.wiki.config.WikiApplication              :20   [32m                  [0;39m 启动成功
+2022-04-06 17:53:18.686 INFO  com.zexi.wiki.config.WikiApplication              :21   [32m                  [0;39m 地址： 	http://127.0.0.1: 8880
+2022-04-06 17:53:24.590 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2022-04-06 17:53:33.160 INFO  com.zexi.wiki.config.WikiApplication              :55   [32m                  [0;39m Starting WikiApplication using Java 17.0.1 on Nongs-MacBook-Pro.local with PID 79824 (/Users/nongzexi/Desktop/temp/wiki/target/classes started by nongzexi in /Users/nongzexi/Desktop/temp/wiki)
+2022-04-06 17:53:33.162 INFO  com.zexi.wiki.config.WikiApplication              :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2022-04-06 17:53:33.215 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-04-06 17:53:33.215 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-04-06 17:53:34.058 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2022-04-06 17:53:34.067 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2022-04-06 17:53:34.067 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-04-06 17:53:34.068 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2022-04-06 17:53:34.134 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-04-06 17:53:34.135 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 919 ms
+2022-04-06 17:53:34.592 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2022-04-06 17:53:34.736 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2022-04-06 17:53:34.748 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2022-04-06 17:53:34.770 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2022-04-06 17:53:34.781 INFO  com.zexi.wiki.config.WikiApplication              :61   [32m                  [0;39m Started WikiApplication in 7.029 seconds (JVM running for 7.421)
+2022-04-06 17:53:34.783 INFO  com.zexi.wiki.config.WikiApplication              :20   [32m                  [0;39m 启动成功
+2022-04-06 17:53:34.784 INFO  com.zexi.wiki.config.WikiApplication              :21   [32m                  [0;39m 地址： 	http://127.0.0.1: 8880
+2022-04-06 17:53:48.912 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-06 17:53:48.912 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2022-04-06 17:53:48.913 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
+2022-04-06 17:53:48.918 INFO  com.zexi.wiki.filter.LogFilter                    :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2022-04-06 17:53:48.918 INFO  com.zexi.wiki.filter.LogFilter                    :26   [32m                  [0;39m 请求地址: http://localhost:8880/test/list GET
+2022-04-06 17:53:48.919 INFO  com.zexi.wiki.filter.LogFilter                    :27   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-04-06 17:53:48.941 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
+2022-04-06 17:53:49.584 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
+2022-04-06 17:53:49.787 INFO  com.zexi.wiki.filter.LogFilter                    :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：868 ms -------------
