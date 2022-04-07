@@ -4,8 +4,9 @@ import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.zexi.wiki.domain.Ebook;
 import com.zexi.wiki.domain.EbookExample;
+import com.zexi.wiki.domain.EbookSaveReq;
 import com.zexi.wiki.mapper.EbookMapper;
-import com.zexi.wiki.req.EbookReq;
+import com.zexi.wiki.req.EbookQueryReq;
 import com.zexi.wiki.resp.EbookResp;
 import com.zexi.wiki.resp.PageResp;
 import com.zexi.wiki.util.CopyUtil;
@@ -25,7 +26,7 @@ public class EbookService {
     @Resource
     private EbookMapper ebookMapper;
 
-    public PageResp<EbookResp> list(EbookReq req) {
+    public PageResp<EbookResp> list(EbookQueryReq req) {
         EbookExample ebookExample = new EbookExample();
         EbookExample.Criteria criteria = ebookExample.createCriteria();
         if (!ObjectUtils.isEmpty(req.getName())) {
@@ -56,5 +57,21 @@ public class EbookService {
         pageResp.setList(list);
 
         return pageResp;
+    }
+
+    /**
+     * 保存
+     */
+    public void save(EbookSaveReq req){
+        Ebook ebook = CopyUtil.copy(req, Ebook.class);
+        if(ObjectUtils.isEmpty(req.getId())){
+            //新增
+            ebookMapper.insert(ebook);
+        }
+        else{
+            //更新
+            ebookMapper.updateByPrimaryKey(ebook);
+        }
+
     }
 }

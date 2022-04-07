@@ -486,3 +486,415 @@
 2022-04-07 12:19:51.581 INFO  com.zexi.wiki.service.EbookService                :39   [32m                  [0;39m 总页数：2
 2022-04-07 12:19:51.584 INFO  com.zexi.wiki.aspect.LogAspect                    :75   [32m                  [0;39m 返回结果: {"content":{"list":[{"cover":"/image/cover1.png","description":"零基础入门 Java 开发，企业级应用开发最佳首选框架","docCount":2,"id":1,"name":"Spring Boot 入门教程","viewCount":6,"voteCount":10},{"cover":"/image/cover2.png","description":"零基础入门 Vue 开发，企业级应用开发最佳首选框架","docCount":0,"id":2,"name":"Vue 入门教程","viewCount":0,"voteCount":0},{"description":"零基础入门 Python 开发，企业级应用开发最佳首选框架","docCount":0,"id":3,"name":"Python 入门教程","viewCount":0,"voteCount":0},{"description":"零基础入门 Mysql 开发，企业级应用开发最佳首选框架","docCount":0,"id":4,"name":"Mysql 入门教程","viewCount":0,"voteCount":0}],"total":5},"success":true}
 2022-04-07 12:19:51.585 INFO  com.zexi.wiki.aspect.LogAspect                    :76   [32m                  [0;39m ------------- 结束 耗时：44 ms -------------
+2022-04-07 13:10:23.875 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2022-04-07 13:10:23.877 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2022-04-07 13:10:23.879 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
+2022-04-07 13:10:28.971 INFO  com.zexi.wiki.config.WikiApplication              :55   [32m                  [0;39m Starting WikiApplication using Java 17.0.1 on Nongs-MacBook-Pro.local with PID 88770 (/Users/nongzexi/Desktop/temp/wiki/target/classes started by nongzexi in /Users/nongzexi/Desktop/temp/wiki)
+2022-04-07 13:10:28.971 INFO  com.zexi.wiki.config.WikiApplication              :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2022-04-07 13:10:29.212 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2022-04-07 13:10:29.213 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2022-04-07 13:10:29.214 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-04-07 13:10:29.214 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2022-04-07 13:10:29.224 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-04-07 13:10:29.225 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 251 ms
+2022-04-07 13:10:29.428 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2022-04-07 13:10:29.588 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2022-04-07 13:10:29.595 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2022-04-07 13:10:29.596 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2022-04-07 13:10:29.600 INFO  com.zexi.wiki.config.WikiApplication              :61   [32m                  [0;39m Started WikiApplication in 5.671 seconds (JVM running for 4329.924)
+2022-04-07 13:10:29.602 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-04-07 13:10:29.602 INFO  com.zexi.wiki.config.WikiApplication              :20   [32m                  [0;39m 启动成功
+2022-04-07 13:10:29.602 INFO  com.zexi.wiki.config.WikiApplication              :21   [32m                  [0;39m 地址： 	http://127.0.0.1: 8880
+2022-04-07 13:10:31.059 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2022-04-07 13:10:31.141 INFO  com.zexi.wiki.config.WikiApplication              :55   [32m                  [0;39m Starting WikiApplication using Java 17.0.1 on Nongs-MacBook-Pro.local with PID 88770 (/Users/nongzexi/Desktop/temp/wiki/target/classes started by nongzexi in /Users/nongzexi/Desktop/temp/wiki)
+2022-04-07 13:10:31.142 INFO  com.zexi.wiki.config.WikiApplication              :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2022-04-07 13:10:31.395 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2022-04-07 13:10:31.396 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2022-04-07 13:10:31.396 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-04-07 13:10:31.397 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2022-04-07 13:10:31.408 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-04-07 13:10:31.408 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 263 ms
+2022-04-07 13:10:31.642 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2022-04-07 13:10:31.758 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2022-04-07 13:10:31.763 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2022-04-07 13:10:31.764 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2022-04-07 13:10:31.767 INFO  com.zexi.wiki.config.WikiApplication              :61   [32m                  [0;39m Started WikiApplication in 0.658 seconds (JVM running for 4332.091)
+2022-04-07 13:10:31.768 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-04-07 13:10:31.769 INFO  com.zexi.wiki.config.WikiApplication              :20   [32m                  [0;39m 启动成功
+2022-04-07 13:10:31.769 INFO  com.zexi.wiki.config.WikiApplication              :21   [32m                  [0;39m 地址： 	http://127.0.0.1: 8880
+2022-04-07 13:10:34.952 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-07 13:10:34.953 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2022-04-07 13:10:34.953 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 0 ms
+2022-04-07 13:10:34.958 INFO  com.zexi.wiki.aspect.LogAspect                    :40   [32m                  [0;39m ------------- 开始 -------------
+2022-04-07 13:10:34.958 INFO  com.zexi.wiki.aspect.LogAspect                    :41   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-04-07 13:10:34.958 INFO  com.zexi.wiki.aspect.LogAspect                    :42   [32m                  [0;39m 类名方法: com.zexi.wiki.controller.EbookController.list
+2022-04-07 13:10:34.959 INFO  com.zexi.wiki.aspect.LogAspect                    :43   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-04-07 13:10:34.960 INFO  com.zexi.wiki.aspect.LogAspect                    :63   [32m                  [0;39m 请求参数: [{"page":1,"size":4}]
+2022-04-07 13:10:34.966 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-2 - Starting...
+2022-04-07 13:10:35.064 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-2 - Start completed.
+2022-04-07 13:10:35.065 DEBUG c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-04-07 13:10:35.065 DEBUG c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2022-04-07 13:10:35.073 TRACE c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2022-04-07 13:10:35.074 TRACE c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 5
+2022-04-07 13:10:35.075 DEBUG c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2022-04-07 13:10:35.075 DEBUG com.zexi.wiki.mapper.EbookMapper.selectByExample  :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-04-07 13:10:35.075 DEBUG com.zexi.wiki.mapper.EbookMapper.selectByExample  :137  [32m                  [0;39m ==> Parameters: 4(Integer)
+2022-04-07 13:10:35.085 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-04-07 13:10:35.086 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 1, Spring Boot 入门教程, null, null, 零基础入门 Java 开发，企业级应用开发最佳首选框架, /image/cover1.png, 2, 6, 10
+2022-04-07 13:10:35.086 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 2, Vue 入门教程, null, null, 零基础入门 Vue 开发，企业级应用开发最佳首选框架, /image/cover2.png, 0, 0, 0
+2022-04-07 13:10:35.086 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 3, Python 入门教程, null, null, 零基础入门 Python 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2022-04-07 13:10:35.087 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 4, Mysql 入门教程, null, null, 零基础入门 Mysql 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2022-04-07 13:10:35.087 DEBUG com.zexi.wiki.mapper.EbookMapper.selectByExample  :137  [32m                  [0;39m <==      Total: 4
+2022-04-07 13:10:35.087 INFO  com.zexi.wiki.service.EbookService                :39   [32m                  [0;39m 总行数：5
+2022-04-07 13:10:35.087 INFO  com.zexi.wiki.service.EbookService                :40   [32m                  [0;39m 总页数：2
+2022-04-07 13:10:35.095 INFO  com.zexi.wiki.aspect.LogAspect                    :75   [32m                  [0;39m 返回结果: {"content":{"list":[{"cover":"/image/cover1.png","description":"零基础入门 Java 开发，企业级应用开发最佳首选框架","docCount":2,"id":1,"name":"Spring Boot 入门教程","viewCount":6,"voteCount":10},{"cover":"/image/cover2.png","description":"零基础入门 Vue 开发，企业级应用开发最佳首选框架","docCount":0,"id":2,"name":"Vue 入门教程","viewCount":0,"voteCount":0},{"description":"零基础入门 Python 开发，企业级应用开发最佳首选框架","docCount":0,"id":3,"name":"Python 入门教程","viewCount":0,"voteCount":0},{"description":"零基础入门 Mysql 开发，企业级应用开发最佳首选框架","docCount":0,"id":4,"name":"Mysql 入门教程","viewCount":0,"voteCount":0}],"total":5},"success":true}
+2022-04-07 13:10:35.096 INFO  com.zexi.wiki.aspect.LogAspect                    :76   [32m                  [0;39m ------------- 结束 耗时：138 ms -------------
+2022-04-07 13:12:54.529 INFO  com.zexi.wiki.aspect.LogAspect                    :40   [32m                  [0;39m ------------- 开始 -------------
+2022-04-07 13:12:54.529 INFO  com.zexi.wiki.aspect.LogAspect                    :41   [32m                  [0;39m 请求地址: http://localhost:8880/ebook/save POST
+2022-04-07 13:12:54.529 INFO  com.zexi.wiki.aspect.LogAspect                    :42   [32m                  [0;39m 类名方法: com.zexi.wiki.controller.EbookController.save
+2022-04-07 13:12:54.529 INFO  com.zexi.wiki.aspect.LogAspect                    :43   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-04-07 13:12:54.530 INFO  com.zexi.wiki.aspect.LogAspect                    :63   [32m                  [0;39m 请求参数: [{}]
+2022-04-07 13:12:54.546 DEBUG com.zexi.wiki.mapper.EbookMapper.insert           :137  [32m                  [0;39m ==>  Preparing: insert into ebook (id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count ) values (?, ?, ?, ?, ?, ?, ?, ?, ? )
+2022-04-07 13:12:54.547 DEBUG com.zexi.wiki.mapper.EbookMapper.insert           :137  [32m                  [0;39m ==> Parameters: null, null, null, null, null, null, null, null, null
+2022-04-07 13:12:54.617 ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet]   :175  [32m                  [0;39m Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Column 'id' cannot be null
+### The error may exist in file [/Users/nongzexi/Desktop/temp/wiki/target/classes/mapper/EbookMapper.xml]
+### The error may involve com.zexi.wiki.mapper.EbookMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: insert into ebook (id, `name`, category1_id,        category2_id, description, cover,        doc_count, view_count, vote_count       )     values (?, ?, ?,        ?, ?, ?,        ?, ?, ?       )
+### Cause: java.sql.SQLIntegrityConstraintViolationException: Column 'id' cannot be null
+; Column 'id' cannot be null; nested exception is java.sql.SQLIntegrityConstraintViolationException: Column 'id' cannot be null] with root cause
+java.sql.SQLIntegrityConstraintViolationException: Column 'id' cannot be null
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at jdk.proxy4/jdk.proxy4.$Proxy93.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
+	at jdk.proxy2/jdk.proxy2.$Proxy91.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	at jdk.proxy2/jdk.proxy2.$Proxy73.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:271)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:152)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
+	at jdk.proxy6/jdk.proxy6.$Proxy101.insert(Unknown Source)
+	at com.zexi.wiki.service.EbookService.save(EbookService.java:69)
+	at com.zexi.wiki.controller.EbookController.save(EbookController.java:33)
+	at com.zexi.wiki.controller.EbookController$$FastClassBySpringCGLIB$$ef96f351.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at com.zexi.wiki.aspect.LogAspect.doAround(LogAspect.java:69)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:72)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at com.zexi.wiki.controller.EbookController$$EnhancerBySpringCGLIB$$124a2538.save(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:893)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:807)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1061)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:961)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-04-07 13:13:26.886 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2022-04-07 13:13:26.886 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-2 - Shutdown initiated...
+2022-04-07 13:13:26.888 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-2 - Shutdown completed.
+2022-04-07 13:13:35.199 INFO  com.zexi.wiki.config.WikiApplication              :55   [32m                  [0;39m Starting WikiApplication using Java 17.0.1 on Nongs-MacBook-Pro.local with PID 24758 (/Users/nongzexi/Desktop/temp/wiki/target/classes started by nongzexi in /Users/nongzexi/Desktop/temp/wiki)
+2022-04-07 13:13:35.201 INFO  com.zexi.wiki.config.WikiApplication              :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2022-04-07 13:13:35.240 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-04-07 13:13:35.241 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-04-07 13:13:36.118 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2022-04-07 13:13:36.126 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2022-04-07 13:13:36.126 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-04-07 13:13:36.127 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2022-04-07 13:13:36.186 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-04-07 13:13:36.187 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 945 ms
+2022-04-07 13:13:36.651 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2022-04-07 13:13:36.877 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2022-04-07 13:13:36.889 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2022-04-07 13:13:36.906 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2022-04-07 13:13:36.914 INFO  com.zexi.wiki.config.WikiApplication              :61   [32m                  [0;39m Started WikiApplication in 7.046 seconds (JVM running for 7.421)
+2022-04-07 13:13:36.916 INFO  com.zexi.wiki.config.WikiApplication              :20   [32m                  [0;39m 启动成功
+2022-04-07 13:13:36.917 INFO  com.zexi.wiki.config.WikiApplication              :21   [32m                  [0;39m 地址： 	http://127.0.0.1: 8880
+2022-04-07 13:13:41.498 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-07 13:13:41.498 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2022-04-07 13:13:41.499 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 0 ms
+2022-04-07 13:13:41.552 INFO  com.zexi.wiki.aspect.LogAspect                    :40   [32m                  [0;39m ------------- 开始 -------------
+2022-04-07 13:13:41.552 INFO  com.zexi.wiki.aspect.LogAspect                    :41   [32m                  [0;39m 请求地址: http://localhost:8880/ebook/save POST
+2022-04-07 13:13:41.553 INFO  com.zexi.wiki.aspect.LogAspect                    :42   [32m                  [0;39m 类名方法: com.zexi.wiki.controller.EbookController.save
+2022-04-07 13:13:41.553 INFO  com.zexi.wiki.aspect.LogAspect                    :43   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-04-07 13:13:41.599 INFO  com.zexi.wiki.aspect.LogAspect                    :63   [32m                  [0;39m 请求参数: [{}]
+2022-04-07 13:13:41.621 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
+2022-04-07 13:13:41.972 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
+2022-04-07 13:13:41.979 DEBUG com.zexi.wiki.mapper.EbookMapper.insert           :137  [32m                  [0;39m ==>  Preparing: insert into ebook (id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count ) values (?, ?, ?, ?, ?, ?, ?, ?, ? )
+2022-04-07 13:13:42.002 DEBUG com.zexi.wiki.mapper.EbookMapper.insert           :137  [32m                  [0;39m ==> Parameters: null, null, null, null, null, null, null, null, null
+2022-04-07 13:13:42.057 ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet]   :175  [32m                  [0;39m Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Column 'id' cannot be null
+### The error may exist in file [/Users/nongzexi/Desktop/temp/wiki/target/classes/mapper/EbookMapper.xml]
+### The error may involve com.zexi.wiki.mapper.EbookMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: insert into ebook (id, `name`, category1_id,        category2_id, description, cover,        doc_count, view_count, vote_count       )     values (?, ?, ?,        ?, ?, ?,        ?, ?, ?       )
+### Cause: java.sql.SQLIntegrityConstraintViolationException: Column 'id' cannot be null
+; Column 'id' cannot be null; nested exception is java.sql.SQLIntegrityConstraintViolationException: Column 'id' cannot be null] with root cause
+java.sql.SQLIntegrityConstraintViolationException: Column 'id' cannot be null
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at jdk.proxy4/jdk.proxy4.$Proxy94.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
+	at jdk.proxy2/jdk.proxy2.$Proxy92.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	at jdk.proxy2/jdk.proxy2.$Proxy73.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:271)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:152)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
+	at jdk.proxy3/jdk.proxy3.$Proxy76.insert(Unknown Source)
+	at com.zexi.wiki.service.EbookService.save(EbookService.java:69)
+	at com.zexi.wiki.controller.EbookController.save(EbookController.java:33)
+	at com.zexi.wiki.controller.EbookController$$FastClassBySpringCGLIB$$ef96f351.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at com.zexi.wiki.aspect.LogAspect.doAround(LogAspect.java:69)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:72)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at com.zexi.wiki.controller.EbookController$$EnhancerBySpringCGLIB$$124a2538.save(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:893)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:807)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1061)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:961)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-04-07 13:15:26.275 INFO  com.zexi.wiki.aspect.LogAspect                    :40   [32m                  [0;39m ------------- 开始 -------------
+2022-04-07 13:15:26.276 INFO  com.zexi.wiki.aspect.LogAspect                    :41   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-04-07 13:15:26.276 INFO  com.zexi.wiki.aspect.LogAspect                    :42   [32m                  [0;39m 类名方法: com.zexi.wiki.controller.EbookController.list
+2022-04-07 13:15:26.276 INFO  com.zexi.wiki.aspect.LogAspect                    :43   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-04-07 13:15:26.278 INFO  com.zexi.wiki.aspect.LogAspect                    :63   [32m                  [0;39m 请求参数: [{"page":1,"size":4}]
+2022-04-07 13:15:26.333 DEBUG c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-04-07 13:15:26.333 DEBUG c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2022-04-07 13:15:26.354 TRACE c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2022-04-07 13:15:26.355 TRACE c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 5
+2022-04-07 13:15:26.356 DEBUG c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2022-04-07 13:15:26.358 DEBUG com.zexi.wiki.mapper.EbookMapper.selectByExample  :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-04-07 13:15:26.358 DEBUG com.zexi.wiki.mapper.EbookMapper.selectByExample  :137  [32m                  [0;39m ==> Parameters: 4(Integer)
+2022-04-07 13:15:26.367 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-04-07 13:15:26.367 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 1, Spring Boot 入门教程, null, null, 零基础入门 Java 开发，企业级应用开发最佳首选框架, /image/cover1.png, 2, 6, 10
+2022-04-07 13:15:26.368 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 2, Vue 入门教程, null, null, 零基础入门 Vue 开发，企业级应用开发最佳首选框架, /image/cover2.png, 0, 0, 0
+2022-04-07 13:15:26.369 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 3, Python 入门教程, null, null, 零基础入门 Python 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2022-04-07 13:15:26.369 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 4, Mysql 入门教程, null, null, 零基础入门 Mysql 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2022-04-07 13:15:26.370 DEBUG com.zexi.wiki.mapper.EbookMapper.selectByExample  :137  [32m                  [0;39m <==      Total: 4
+2022-04-07 13:15:26.371 INFO  com.zexi.wiki.service.EbookService                :39   [32m                  [0;39m 总行数：5
+2022-04-07 13:15:26.371 INFO  com.zexi.wiki.service.EbookService                :40   [32m                  [0;39m 总页数：2
+2022-04-07 13:15:26.379 INFO  com.zexi.wiki.aspect.LogAspect                    :75   [32m                  [0;39m 返回结果: {"content":{"list":[{"cover":"/image/cover1.png","description":"零基础入门 Java 开发，企业级应用开发最佳首选框架","docCount":2,"id":1,"name":"Spring Boot 入门教程","viewCount":6,"voteCount":10},{"cover":"/image/cover2.png","description":"零基础入门 Vue 开发，企业级应用开发最佳首选框架","docCount":0,"id":2,"name":"Vue 入门教程","viewCount":0,"voteCount":0},{"description":"零基础入门 Python 开发，企业级应用开发最佳首选框架","docCount":0,"id":3,"name":"Python 入门教程","viewCount":0,"voteCount":0},{"description":"零基础入门 Mysql 开发，企业级应用开发最佳首选框架","docCount":0,"id":4,"name":"Mysql 入门教程","viewCount":0,"voteCount":0}],"total":5},"success":true}
+2022-04-07 13:15:26.379 INFO  com.zexi.wiki.aspect.LogAspect                    :76   [32m                  [0;39m ------------- 结束 耗时：104 ms -------------
+2022-04-07 13:15:56.370 INFO  com.zexi.wiki.aspect.LogAspect                    :40   [32m                  [0;39m ------------- 开始 -------------
+2022-04-07 13:15:56.371 INFO  com.zexi.wiki.aspect.LogAspect                    :41   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-04-07 13:15:56.371 INFO  com.zexi.wiki.aspect.LogAspect                    :42   [32m                  [0;39m 类名方法: com.zexi.wiki.controller.EbookController.list
+2022-04-07 13:15:56.371 INFO  com.zexi.wiki.aspect.LogAspect                    :43   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-04-07 13:15:56.371 INFO  com.zexi.wiki.aspect.LogAspect                    :63   [32m                  [0;39m 请求参数: [{"page":1,"size":4}]
+2022-04-07 13:15:56.386 DEBUG c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-04-07 13:15:56.387 DEBUG c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2022-04-07 13:15:56.395 TRACE c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2022-04-07 13:15:56.395 TRACE c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 5
+2022-04-07 13:15:56.395 DEBUG c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2022-04-07 13:15:56.396 DEBUG com.zexi.wiki.mapper.EbookMapper.selectByExample  :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-04-07 13:15:56.396 DEBUG com.zexi.wiki.mapper.EbookMapper.selectByExample  :137  [32m                  [0;39m ==> Parameters: 4(Integer)
+2022-04-07 13:15:56.405 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-04-07 13:15:56.405 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 1, Spring Boot 入门教程, null, null, 零基础入门 Java 开发，企业级应用开发最佳首选框架, /image/cover1.png, 2, 6, 10
+2022-04-07 13:15:56.406 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 2, Vue 入门教程, null, null, 零基础入门 Vue 开发，企业级应用开发最佳首选框架, /image/cover2.png, 0, 0, 0
+2022-04-07 13:15:56.407 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 3, Python 入门教程, null, null, 零基础入门 Python 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2022-04-07 13:15:56.407 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 4, Mysql 入门教程, null, null, 零基础入门 Mysql 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2022-04-07 13:15:56.408 DEBUG com.zexi.wiki.mapper.EbookMapper.selectByExample  :137  [32m                  [0;39m <==      Total: 4
+2022-04-07 13:15:56.408 INFO  com.zexi.wiki.service.EbookService                :39   [32m                  [0;39m 总行数：5
+2022-04-07 13:15:56.409 INFO  com.zexi.wiki.service.EbookService                :40   [32m                  [0;39m 总页数：2
+2022-04-07 13:15:56.409 INFO  com.zexi.wiki.aspect.LogAspect                    :75   [32m                  [0;39m 返回结果: {"content":{"list":[{"cover":"/image/cover1.png","description":"零基础入门 Java 开发，企业级应用开发最佳首选框架","docCount":2,"id":1,"name":"Spring Boot 入门教程","viewCount":6,"voteCount":10},{"cover":"/image/cover2.png","description":"零基础入门 Vue 开发，企业级应用开发最佳首选框架","docCount":0,"id":2,"name":"Vue 入门教程","viewCount":0,"voteCount":0},{"description":"零基础入门 Python 开发，企业级应用开发最佳首选框架","docCount":0,"id":3,"name":"Python 入门教程","viewCount":0,"voteCount":0},{"description":"零基础入门 Mysql 开发，企业级应用开发最佳首选框架","docCount":0,"id":4,"name":"Mysql 入门教程","viewCount":0,"voteCount":0}],"total":5},"success":true}
+2022-04-07 13:15:56.410 INFO  com.zexi.wiki.aspect.LogAspect                    :76   [32m                  [0;39m ------------- 结束 耗时：40 ms -------------
+2022-04-07 13:15:57.648 INFO  com.zexi.wiki.aspect.LogAspect                    :40   [32m                  [0;39m ------------- 开始 -------------
+2022-04-07 13:15:57.649 INFO  com.zexi.wiki.aspect.LogAspect                    :41   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-04-07 13:15:57.649 INFO  com.zexi.wiki.aspect.LogAspect                    :42   [32m                  [0;39m 类名方法: com.zexi.wiki.controller.EbookController.list
+2022-04-07 13:15:57.649 INFO  com.zexi.wiki.aspect.LogAspect                    :43   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-04-07 13:15:57.649 INFO  com.zexi.wiki.aspect.LogAspect                    :63   [32m                  [0;39m 请求参数: [{"page":1,"size":4}]
+2022-04-07 13:15:57.659 DEBUG c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-04-07 13:15:57.659 DEBUG c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2022-04-07 13:15:57.668 TRACE c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2022-04-07 13:15:57.668 TRACE c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 5
+2022-04-07 13:15:57.669 DEBUG c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2022-04-07 13:15:57.669 DEBUG com.zexi.wiki.mapper.EbookMapper.selectByExample  :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-04-07 13:15:57.670 DEBUG com.zexi.wiki.mapper.EbookMapper.selectByExample  :137  [32m                  [0;39m ==> Parameters: 4(Integer)
+2022-04-07 13:15:57.678 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-04-07 13:15:57.678 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 1, Spring Boot 入门教程, null, null, 零基础入门 Java 开发，企业级应用开发最佳首选框架, /image/cover1.png, 2, 6, 10
+2022-04-07 13:15:57.678 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 2, Vue 入门教程, null, null, 零基础入门 Vue 开发，企业级应用开发最佳首选框架, /image/cover2.png, 0, 0, 0
+2022-04-07 13:15:57.679 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 3, Python 入门教程, null, null, 零基础入门 Python 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2022-04-07 13:15:57.680 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 4, Mysql 入门教程, null, null, 零基础入门 Mysql 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2022-04-07 13:15:57.680 DEBUG com.zexi.wiki.mapper.EbookMapper.selectByExample  :137  [32m                  [0;39m <==      Total: 4
+2022-04-07 13:15:57.681 INFO  com.zexi.wiki.service.EbookService                :39   [32m                  [0;39m 总行数：5
+2022-04-07 13:15:57.681 INFO  com.zexi.wiki.service.EbookService                :40   [32m                  [0;39m 总页数：2
+2022-04-07 13:15:57.682 INFO  com.zexi.wiki.aspect.LogAspect                    :75   [32m                  [0;39m 返回结果: {"content":{"list":[{"cover":"/image/cover1.png","description":"零基础入门 Java 开发，企业级应用开发最佳首选框架","docCount":2,"id":1,"name":"Spring Boot 入门教程","viewCount":6,"voteCount":10},{"cover":"/image/cover2.png","description":"零基础入门 Vue 开发，企业级应用开发最佳首选框架","docCount":0,"id":2,"name":"Vue 入门教程","viewCount":0,"voteCount":0},{"description":"零基础入门 Python 开发，企业级应用开发最佳首选框架","docCount":0,"id":3,"name":"Python 入门教程","viewCount":0,"voteCount":0},{"description":"零基础入门 Mysql 开发，企业级应用开发最佳首选框架","docCount":0,"id":4,"name":"Mysql 入门教程","viewCount":0,"voteCount":0}],"total":5},"success":true}
+2022-04-07 13:15:57.682 INFO  com.zexi.wiki.aspect.LogAspect                    :76   [32m                  [0;39m ------------- 结束 耗时：34 ms -------------
