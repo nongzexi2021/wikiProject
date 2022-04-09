@@ -27,3 +27,360 @@
 2022-04-08 11:04:16.899 INFO  com.zexi.wiki.service.EbookService                :44   [32m                  [0;39m 总页数：1
 2022-04-08 11:04:16.900 INFO  com.zexi.wiki.aspect.LogAspect                    :75   [32m                  [0;39m 返回结果: {"content":{"list":[{"cover":"/image/cover1.png","description":"零基础入门 Java 开发，企业级应用开发最佳首选框架","docCount":2,"id":1,"name":"Spring Boot 入门教程","viewCount":6,"voteCount":10},{"cover":"/image/cover2.png","description":"零基础入门 Vue 开发，企业级应用开发最佳首选框架","docCount":0,"id":2,"name":"Vue 入门教程","viewCount":0,"voteCount":0},{"description":"零基础入门 Python 开发，企业级应用开发最佳首选框架","docCount":0,"id":3,"name":"Python 入门教程","viewCount":0,"voteCount":0},{"description":"零基础入门 Mysql 开发，企业级应用开发最佳首选框架","docCount":0,"id":4,"name":"Mysql 入门教程","viewCount":0,"voteCount":0},{"description":"零基础入门 Oracle 开发，企业级应用开发最佳首选框架","docCount":0,"id":5,"name":"Oracle 入门教程","viewCount":0,"voteCount":0}],"total":5},"success":true}
 2022-04-08 11:04:16.901 INFO  com.zexi.wiki.aspect.LogAspect                    :76   [32m                  [0;39m ------------- 结束 耗时：67 ms -------------
+2022-04-08 22:03:07.090 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 6.1.6.Final
+2022-04-08 22:03:07.103 INFO  com.zexi.wiki.config.WikiApplication              :55   [32m                  [0;39m Starting WikiApplication using Java 17.0.1 on Nongs-MacBook-Pro.local with PID 49459 (/Users/nongzexi/Desktop/temp/wiki/target/classes started by nongzexi in /Users/nongzexi/Desktop/temp/wiki)
+2022-04-08 22:03:07.104 INFO  com.zexi.wiki.config.WikiApplication              :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2022-04-08 22:03:07.158 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-04-08 22:03:07.159 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-04-08 22:03:08.320 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2022-04-08 22:03:08.329 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2022-04-08 22:03:08.330 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-04-08 22:03:08.330 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2022-04-08 22:03:08.394 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-04-08 22:03:08.395 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1235 ms
+2022-04-08 22:03:09.144 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2022-04-08 22:03:09.562 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2022-04-08 22:03:09.581 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2022-04-08 22:03:09.609 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2022-04-08 22:03:09.623 INFO  com.zexi.wiki.config.WikiApplication              :61   [32m                  [0;39m Started WikiApplication in 8.017 seconds (JVM running for 8.542)
+2022-04-08 22:03:09.629 INFO  com.zexi.wiki.config.WikiApplication              :20   [32m                  [0;39m 启动成功
+2022-04-08 22:03:09.630 INFO  com.zexi.wiki.config.WikiApplication              :21   [32m                  [0;39m 地址： 	http://127.0.0.1: 8880
+2022-04-08 22:03:10.571 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-08 22:03:10.572 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2022-04-08 22:03:10.573 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
+2022-04-08 22:03:10.612 INFO  com.zexi.wiki.aspect.LogAspect                    :40   [32m                  [0;39m ------------- 开始 -------------
+2022-04-08 22:03:10.613 INFO  com.zexi.wiki.aspect.LogAspect                    :41   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-04-08 22:03:10.613 INFO  com.zexi.wiki.aspect.LogAspect                    :42   [32m                  [0;39m 类名方法: com.zexi.wiki.controller.EbookController.list
+2022-04-08 22:03:10.614 INFO  com.zexi.wiki.aspect.LogAspect                    :43   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-04-08 22:03:10.716 INFO  com.zexi.wiki.aspect.LogAspect                    :63   [32m                  [0;39m 请求参数: [{"page":1,"size":1000}]
+2022-04-08 22:03:10.756 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
+2022-04-08 22:03:11.272 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
+2022-04-08 22:03:11.495 DEBUG c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-04-08 22:03:11.516 DEBUG c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2022-04-08 22:03:11.544 TRACE c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2022-04-08 22:03:11.545 TRACE c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 5
+2022-04-08 22:03:11.546 DEBUG c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2022-04-08 22:03:11.548 DEBUG com.zexi.wiki.mapper.EbookMapper.selectByExample  :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-04-08 22:03:11.548 DEBUG com.zexi.wiki.mapper.EbookMapper.selectByExample  :137  [32m                  [0;39m ==> Parameters: 1000(Integer)
+2022-04-08 22:03:11.565 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-04-08 22:03:11.565 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 1, Spring Boot 入门教程, null, null, 零基础入门 Java 开发，企业级应用开发最佳首选框架, /image/cover1.png, 2, 6, 10
+2022-04-08 22:03:11.567 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 2, Vue 入门教程, null, null, 零基础入门 Vue 开发，企业级应用开发最佳首选框架, /image/cover2.png, 0, 0, 0
+2022-04-08 22:03:11.568 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 3, Python 入门教程, null, null, 零基础入门 Python 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2022-04-08 22:03:11.569 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 4, Mysql 入门教程, null, null, 零基础入门 Mysql 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2022-04-08 22:03:11.570 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 5, Oracle 入门教程, null, null, 零基础入门 Oracle 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2022-04-08 22:03:11.571 DEBUG com.zexi.wiki.mapper.EbookMapper.selectByExample  :137  [32m                  [0;39m <==      Total: 5
+2022-04-08 22:03:11.574 INFO  com.zexi.wiki.service.EbookService                :43   [32m                  [0;39m 总行数：5
+2022-04-08 22:03:11.574 INFO  com.zexi.wiki.service.EbookService                :44   [32m                  [0;39m 总页数：1
+2022-04-08 22:03:11.589 INFO  com.zexi.wiki.aspect.LogAspect                    :75   [32m                  [0;39m 返回结果: {"content":{"list":[{"cover":"/image/cover1.png","description":"零基础入门 Java 开发，企业级应用开发最佳首选框架","docCount":2,"id":1,"name":"Spring Boot 入门教程","viewCount":6,"voteCount":10},{"cover":"/image/cover2.png","description":"零基础入门 Vue 开发，企业级应用开发最佳首选框架","docCount":0,"id":2,"name":"Vue 入门教程","viewCount":0,"voteCount":0},{"description":"零基础入门 Python 开发，企业级应用开发最佳首选框架","docCount":0,"id":3,"name":"Python 入门教程","viewCount":0,"voteCount":0},{"description":"零基础入门 Mysql 开发，企业级应用开发最佳首选框架","docCount":0,"id":4,"name":"Mysql 入门教程","viewCount":0,"voteCount":0},{"description":"零基础入门 Oracle 开发，企业级应用开发最佳首选框架","docCount":0,"id":5,"name":"Oracle 入门教程","viewCount":0,"voteCount":0}],"total":5},"success":true}
+2022-04-08 22:03:11.590 INFO  com.zexi.wiki.aspect.LogAspect                    :76   [32m                  [0;39m ------------- 结束 耗时：979 ms -------------
+2022-04-08 22:10:48.679 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2022-04-08 22:10:48.680 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2022-04-08 22:10:48.686 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
+2022-04-08 22:10:53.804 INFO  com.zexi.wiki.config.WikiApplication              :55   [32m                  [0;39m Starting WikiApplication using Java 17.0.1 on Nongs-MacBook-Pro.local with PID 49459 (/Users/nongzexi/Desktop/temp/wiki/target/classes started by nongzexi in /Users/nongzexi/Desktop/temp/wiki)
+2022-04-08 22:10:53.805 INFO  com.zexi.wiki.config.WikiApplication              :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2022-04-08 22:10:54.041 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2022-04-08 22:10:54.042 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2022-04-08 22:10:54.042 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-04-08 22:10:54.043 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2022-04-08 22:10:54.055 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-04-08 22:10:54.055 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 248 ms
+2022-04-08 22:10:54.254 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2022-04-08 22:10:54.354 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2022-04-08 22:10:54.359 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2022-04-08 22:10:54.361 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2022-04-08 22:10:54.365 INFO  com.zexi.wiki.config.WikiApplication              :61   [32m                  [0;39m Started WikiApplication in 5.603 seconds (JVM running for 473.273)
+2022-04-08 22:10:54.366 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-04-08 22:10:54.366 INFO  com.zexi.wiki.config.WikiApplication              :20   [32m                  [0;39m 启动成功
+2022-04-08 22:10:54.366 INFO  com.zexi.wiki.config.WikiApplication              :21   [32m                  [0;39m 地址： 	http://127.0.0.1: 8880
+2022-04-08 22:10:55.824 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2022-04-08 22:10:55.904 INFO  com.zexi.wiki.config.WikiApplication              :55   [32m                  [0;39m Starting WikiApplication using Java 17.0.1 on Nongs-MacBook-Pro.local with PID 49459 (/Users/nongzexi/Desktop/temp/wiki/target/classes started by nongzexi in /Users/nongzexi/Desktop/temp/wiki)
+2022-04-08 22:10:55.904 INFO  com.zexi.wiki.config.WikiApplication              :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2022-04-08 22:10:56.087 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2022-04-08 22:10:56.088 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2022-04-08 22:10:56.088 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-04-08 22:10:56.089 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2022-04-08 22:10:56.098 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-04-08 22:10:56.099 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 192 ms
+2022-04-08 22:10:56.297 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2022-04-08 22:10:56.424 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2022-04-08 22:10:56.431 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2022-04-08 22:10:56.432 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2022-04-08 22:10:56.436 INFO  com.zexi.wiki.config.WikiApplication              :61   [32m                  [0;39m Started WikiApplication in 0.557 seconds (JVM running for 475.344)
+2022-04-08 22:10:56.437 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-04-08 22:10:56.437 INFO  com.zexi.wiki.config.WikiApplication              :20   [32m                  [0;39m 启动成功
+2022-04-08 22:10:56.437 INFO  com.zexi.wiki.config.WikiApplication              :21   [32m                  [0;39m 地址： 	http://127.0.0.1: 8880
+2022-04-08 22:16:32.837 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-08 22:16:32.837 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2022-04-08 22:16:32.837 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 0 ms
+2022-04-08 22:16:32.842 INFO  com.zexi.wiki.aspect.LogAspect                    :40   [32m                  [0;39m ------------- 开始 -------------
+2022-04-08 22:16:32.843 INFO  com.zexi.wiki.aspect.LogAspect                    :41   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-04-08 22:16:32.843 INFO  com.zexi.wiki.aspect.LogAspect                    :42   [32m                  [0;39m 类名方法: com.zexi.wiki.controller.EbookController.list
+2022-04-08 22:16:32.843 INFO  com.zexi.wiki.aspect.LogAspect                    :43   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-04-08 22:16:32.845 INFO  com.zexi.wiki.aspect.LogAspect                    :63   [32m                  [0;39m 请求参数: [{"page":1,"size":1000}]
+2022-04-08 22:16:32.852 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-2 - Starting...
+2022-04-08 22:16:33.138 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-2 - Start completed.
+2022-04-08 22:16:33.141 DEBUG c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-04-08 22:16:33.142 DEBUG c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2022-04-08 22:16:33.160 TRACE c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2022-04-08 22:16:33.181 TRACE c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 5
+2022-04-08 22:16:33.184 DEBUG c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2022-04-08 22:16:33.184 DEBUG com.zexi.wiki.mapper.EbookMapper.selectByExample  :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-04-08 22:16:33.185 DEBUG com.zexi.wiki.mapper.EbookMapper.selectByExample  :137  [32m                  [0;39m ==> Parameters: 1000(Integer)
+2022-04-08 22:16:33.200 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-04-08 22:16:33.200 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 1, Spring Boot 入门教程, null, null, 零基础入门 Java 开发，企业级应用开发最佳首选框架, null, null, null, null
+2022-04-08 22:16:33.201 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 2, Vue 入门教程, null, null, 零基础入门 Vue 开发，企业级应用开发最佳首选框架, null, null, null, null
+2022-04-08 22:16:33.201 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 3, Python 入门教程, null, null, 零基础入门 Python 开发，企业级应用开发最佳首选框架, null, null, null, null
+2022-04-08 22:16:33.202 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 4, Mysql 入门教程, null, null, 零基础入门 Mysql 开发，企业级应用开发最佳首选框架, null, null, null, null
+2022-04-08 22:16:33.202 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 5, Oracle 入门教程, null, null, 零基础入门 Oracle 开发，企业级应用开发最佳首选框架, null, null, null, null
+2022-04-08 22:16:33.203 DEBUG com.zexi.wiki.mapper.EbookMapper.selectByExample  :137  [32m                  [0;39m <==      Total: 5
+2022-04-08 22:16:33.203 INFO  com.zexi.wiki.service.EbookService                :43   [32m                  [0;39m 总行数：5
+2022-04-08 22:16:33.203 INFO  com.zexi.wiki.service.EbookService                :44   [32m                  [0;39m 总页数：1
+2022-04-08 22:16:33.211 INFO  com.zexi.wiki.aspect.LogAspect                    :75   [32m                  [0;39m 返回结果: {"content":{"list":[{"description":"零基础入门 Java 开发，企业级应用开发最佳首选框架","id":1,"name":"Spring Boot 入门教程"},{"description":"零基础入门 Vue 开发，企业级应用开发最佳首选框架","id":2,"name":"Vue 入门教程"},{"description":"零基础入门 Python 开发，企业级应用开发最佳首选框架","id":3,"name":"Python 入门教程"},{"description":"零基础入门 Mysql 开发，企业级应用开发最佳首选框架","id":4,"name":"Mysql 入门教程"},{"description":"零基础入门 Oracle 开发，企业级应用开发最佳首选框架","id":5,"name":"Oracle 入门教程"}],"total":5},"success":true}
+2022-04-08 22:16:33.212 INFO  com.zexi.wiki.aspect.LogAspect                    :76   [32m                  [0;39m ------------- 结束 耗时：370 ms -------------
+2022-04-08 22:16:45.271 INFO  com.zexi.wiki.aspect.LogAspect                    :40   [32m                  [0;39m ------------- 开始 -------------
+2022-04-08 22:16:45.272 INFO  com.zexi.wiki.aspect.LogAspect                    :41   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-04-08 22:16:45.272 INFO  com.zexi.wiki.aspect.LogAspect                    :42   [32m                  [0;39m 类名方法: com.zexi.wiki.controller.EbookController.list
+2022-04-08 22:16:45.273 INFO  com.zexi.wiki.aspect.LogAspect                    :43   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-04-08 22:16:45.273 INFO  com.zexi.wiki.aspect.LogAspect                    :63   [32m                  [0;39m 请求参数: [{"page":1,"size":1000}]
+2022-04-08 22:16:45.306 DEBUG c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-04-08 22:16:45.307 DEBUG c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2022-04-08 22:16:45.330 TRACE c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2022-04-08 22:16:45.330 TRACE c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 5
+2022-04-08 22:16:45.330 DEBUG c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2022-04-08 22:16:45.331 DEBUG com.zexi.wiki.mapper.EbookMapper.selectByExample  :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-04-08 22:16:45.331 DEBUG com.zexi.wiki.mapper.EbookMapper.selectByExample  :137  [32m                  [0;39m ==> Parameters: 1000(Integer)
+2022-04-08 22:16:45.353 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-04-08 22:16:45.353 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 1, Spring Boot 入门教程, null, null, 零基础入门 Java 开发，企业级应用开发最佳首选框架, null, null, null, null
+2022-04-08 22:16:45.354 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 2, Vue 入门教程, null, null, 零基础入门 Vue 开发，企业级应用开发最佳首选框架, null, null, null, null
+2022-04-08 22:16:45.354 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 3, Python 入门教程, null, null, 零基础入门 Python 开发，企业级应用开发最佳首选框架, null, null, null, null
+2022-04-08 22:16:45.355 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 4, Mysql 入门教程, null, null, 零基础入门 Mysql 开发，企业级应用开发最佳首选框架, null, null, null, null
+2022-04-08 22:16:45.355 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 5, Oracle 入门教程, null, null, 零基础入门 Oracle 开发，企业级应用开发最佳首选框架, null, null, null, null
+2022-04-08 22:16:45.355 DEBUG com.zexi.wiki.mapper.EbookMapper.selectByExample  :137  [32m                  [0;39m <==      Total: 5
+2022-04-08 22:16:45.355 INFO  com.zexi.wiki.service.EbookService                :43   [32m                  [0;39m 总行数：5
+2022-04-08 22:16:45.356 INFO  com.zexi.wiki.service.EbookService                :44   [32m                  [0;39m 总页数：1
+2022-04-08 22:16:45.356 INFO  com.zexi.wiki.aspect.LogAspect                    :75   [32m                  [0;39m 返回结果: {"content":{"list":[{"description":"零基础入门 Java 开发，企业级应用开发最佳首选框架","id":1,"name":"Spring Boot 入门教程"},{"description":"零基础入门 Vue 开发，企业级应用开发最佳首选框架","id":2,"name":"Vue 入门教程"},{"description":"零基础入门 Python 开发，企业级应用开发最佳首选框架","id":3,"name":"Python 入门教程"},{"description":"零基础入门 Mysql 开发，企业级应用开发最佳首选框架","id":4,"name":"Mysql 入门教程"},{"description":"零基础入门 Oracle 开发，企业级应用开发最佳首选框架","id":5,"name":"Oracle 入门教程"}],"total":5},"success":true}
+2022-04-08 22:16:45.357 INFO  com.zexi.wiki.aspect.LogAspect                    :76   [32m                  [0;39m ------------- 结束 耗时：86 ms -------------
+2022-04-08 22:17:21.104 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2022-04-08 22:17:21.105 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-2 - Shutdown initiated...
+2022-04-08 22:17:21.107 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-2 - Shutdown completed.
+2022-04-08 22:17:26.193 INFO  com.zexi.wiki.config.WikiApplication              :55   [32m                  [0;39m Starting WikiApplication using Java 17.0.1 on Nongs-MacBook-Pro.local with PID 49459 (/Users/nongzexi/Desktop/temp/wiki/target/classes started by nongzexi in /Users/nongzexi/Desktop/temp/wiki)
+2022-04-08 22:17:26.193 INFO  com.zexi.wiki.config.WikiApplication              :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2022-04-08 22:17:26.452 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2022-04-08 22:17:26.453 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2022-04-08 22:17:26.453 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-04-08 22:17:26.454 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2022-04-08 22:17:26.465 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-04-08 22:17:26.465 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 270 ms
+2022-04-08 22:17:26.695 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2022-04-08 22:17:26.853 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2022-04-08 22:17:26.860 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2022-04-08 22:17:26.862 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2022-04-08 22:17:26.866 INFO  com.zexi.wiki.config.WikiApplication              :61   [32m                  [0;39m Started WikiApplication in 5.704 seconds (JVM running for 865.766)
+2022-04-08 22:17:26.867 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-04-08 22:17:26.868 INFO  com.zexi.wiki.config.WikiApplication              :20   [32m                  [0;39m 启动成功
+2022-04-08 22:17:26.868 INFO  com.zexi.wiki.config.WikiApplication              :21   [32m                  [0;39m 地址： 	http://127.0.0.1: 8880
+2022-04-08 22:17:30.878 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-08 22:17:30.880 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2022-04-08 22:17:30.880 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 0 ms
+2022-04-08 22:17:30.886 INFO  com.zexi.wiki.aspect.LogAspect                    :40   [32m                  [0;39m ------------- 开始 -------------
+2022-04-08 22:17:30.886 INFO  com.zexi.wiki.aspect.LogAspect                    :41   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-04-08 22:17:30.886 INFO  com.zexi.wiki.aspect.LogAspect                    :42   [32m                  [0;39m 类名方法: com.zexi.wiki.controller.EbookController.list
+2022-04-08 22:17:30.887 INFO  com.zexi.wiki.aspect.LogAspect                    :43   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-04-08 22:17:30.887 INFO  com.zexi.wiki.aspect.LogAspect                    :63   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2022-04-08 22:17:30.893 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-3 - Starting...
+2022-04-08 22:17:31.094 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-3 - Start completed.
+2022-04-08 22:17:31.095 DEBUG c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-04-08 22:17:31.095 DEBUG c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2022-04-08 22:17:31.111 TRACE c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2022-04-08 22:17:31.111 TRACE c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 5
+2022-04-08 22:17:31.112 DEBUG c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2022-04-08 22:17:31.112 DEBUG com.zexi.wiki.mapper.EbookMapper.selectByExample  :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-04-08 22:17:31.113 DEBUG com.zexi.wiki.mapper.EbookMapper.selectByExample  :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2022-04-08 22:17:31.134 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-04-08 22:17:31.135 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 1, Spring Boot 入门教程, null, null, 零基础入门 Java 开发，企业级应用开发最佳首选框架, null, null, null, null
+2022-04-08 22:17:31.136 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 2, Vue 入门教程, null, null, 零基础入门 Vue 开发，企业级应用开发最佳首选框架, null, null, null, null
+2022-04-08 22:17:31.136 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 3, Python 入门教程, null, null, 零基础入门 Python 开发，企业级应用开发最佳首选框架, null, null, null, null
+2022-04-08 22:17:31.136 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 4, Mysql 入门教程, null, null, 零基础入门 Mysql 开发，企业级应用开发最佳首选框架, null, null, null, null
+2022-04-08 22:17:31.136 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 5, Oracle 入门教程, null, null, 零基础入门 Oracle 开发，企业级应用开发最佳首选框架, null, null, null, null
+2022-04-08 22:17:31.137 DEBUG com.zexi.wiki.mapper.EbookMapper.selectByExample  :137  [32m                  [0;39m <==      Total: 5
+2022-04-08 22:17:31.137 INFO  com.zexi.wiki.service.EbookService                :43   [32m                  [0;39m 总行数：5
+2022-04-08 22:17:31.137 INFO  com.zexi.wiki.service.EbookService                :44   [32m                  [0;39m 总页数：1
+2022-04-08 22:17:31.143 INFO  com.zexi.wiki.aspect.LogAspect                    :75   [32m                  [0;39m 返回结果: {"content":{"list":[{"description":"零基础入门 Java 开发，企业级应用开发最佳首选框架","id":1,"name":"Spring Boot 入门教程"},{"description":"零基础入门 Vue 开发，企业级应用开发最佳首选框架","id":2,"name":"Vue 入门教程"},{"description":"零基础入门 Python 开发，企业级应用开发最佳首选框架","id":3,"name":"Python 入门教程"},{"description":"零基础入门 Mysql 开发，企业级应用开发最佳首选框架","id":4,"name":"Mysql 入门教程"},{"description":"零基础入门 Oracle 开发，企业级应用开发最佳首选框架","id":5,"name":"Oracle 入门教程"}],"total":5},"success":true}
+2022-04-08 22:17:31.143 INFO  com.zexi.wiki.aspect.LogAspect                    :76   [32m                  [0;39m ------------- 结束 耗时：257 ms -------------
+2022-04-08 22:17:31.897 INFO  com.zexi.wiki.aspect.LogAspect                    :40   [32m                  [0;39m ------------- 开始 -------------
+2022-04-08 22:17:31.897 INFO  com.zexi.wiki.aspect.LogAspect                    :41   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-04-08 22:17:31.898 INFO  com.zexi.wiki.aspect.LogAspect                    :42   [32m                  [0;39m 类名方法: com.zexi.wiki.controller.EbookController.list
+2022-04-08 22:17:31.898 INFO  com.zexi.wiki.aspect.LogAspect                    :43   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-04-08 22:17:31.898 INFO  com.zexi.wiki.aspect.LogAspect                    :63   [32m                  [0;39m 请求参数: [{"page":1,"size":1000}]
+2022-04-08 22:17:31.912 DEBUG c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-04-08 22:17:31.912 DEBUG c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2022-04-08 22:17:31.930 TRACE c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2022-04-08 22:17:31.931 TRACE c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 5
+2022-04-08 22:17:31.931 DEBUG c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2022-04-08 22:17:31.931 DEBUG com.zexi.wiki.mapper.EbookMapper.selectByExample  :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-04-08 22:17:31.932 DEBUG com.zexi.wiki.mapper.EbookMapper.selectByExample  :137  [32m                  [0;39m ==> Parameters: 1000(Integer)
+2022-04-08 22:17:31.947 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-04-08 22:17:31.947 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 1, Spring Boot 入门教程, null, null, 零基础入门 Java 开发，企业级应用开发最佳首选框架, null, null, null, null
+2022-04-08 22:17:31.947 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 2, Vue 入门教程, null, null, 零基础入门 Vue 开发，企业级应用开发最佳首选框架, null, null, null, null
+2022-04-08 22:17:31.948 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 3, Python 入门教程, null, null, 零基础入门 Python 开发，企业级应用开发最佳首选框架, null, null, null, null
+2022-04-08 22:17:31.948 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 4, Mysql 入门教程, null, null, 零基础入门 Mysql 开发，企业级应用开发最佳首选框架, null, null, null, null
+2022-04-08 22:17:31.948 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 5, Oracle 入门教程, null, null, 零基础入门 Oracle 开发，企业级应用开发最佳首选框架, null, null, null, null
+2022-04-08 22:17:31.948 DEBUG com.zexi.wiki.mapper.EbookMapper.selectByExample  :137  [32m                  [0;39m <==      Total: 5
+2022-04-08 22:17:31.949 INFO  com.zexi.wiki.service.EbookService                :43   [32m                  [0;39m 总行数：5
+2022-04-08 22:17:31.949 INFO  com.zexi.wiki.service.EbookService                :44   [32m                  [0;39m 总页数：1
+2022-04-08 22:17:31.949 INFO  com.zexi.wiki.aspect.LogAspect                    :75   [32m                  [0;39m 返回结果: {"content":{"list":[{"description":"零基础入门 Java 开发，企业级应用开发最佳首选框架","id":1,"name":"Spring Boot 入门教程"},{"description":"零基础入门 Vue 开发，企业级应用开发最佳首选框架","id":2,"name":"Vue 入门教程"},{"description":"零基础入门 Python 开发，企业级应用开发最佳首选框架","id":3,"name":"Python 入门教程"},{"description":"零基础入门 Mysql 开发，企业级应用开发最佳首选框架","id":4,"name":"Mysql 入门教程"},{"description":"零基础入门 Oracle 开发，企业级应用开发最佳首选框架","id":5,"name":"Oracle 入门教程"}],"total":5},"success":true}
+2022-04-08 22:17:31.950 INFO  com.zexi.wiki.aspect.LogAspect                    :76   [32m                  [0;39m ------------- 结束 耗时：53 ms -------------
+2022-04-08 22:17:33.163 INFO  com.zexi.wiki.aspect.LogAspect                    :40   [32m                  [0;39m ------------- 开始 -------------
+2022-04-08 22:17:33.163 INFO  com.zexi.wiki.aspect.LogAspect                    :41   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-04-08 22:17:33.163 INFO  com.zexi.wiki.aspect.LogAspect                    :42   [32m                  [0;39m 类名方法: com.zexi.wiki.controller.EbookController.list
+2022-04-08 22:17:33.163 INFO  com.zexi.wiki.aspect.LogAspect                    :43   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-04-08 22:17:33.164 INFO  com.zexi.wiki.aspect.LogAspect                    :63   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2022-04-08 22:17:33.186 DEBUG c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-04-08 22:17:33.186 DEBUG c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2022-04-08 22:17:33.202 TRACE c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2022-04-08 22:17:33.203 TRACE c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 5
+2022-04-08 22:17:33.203 DEBUG c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2022-04-08 22:17:33.204 DEBUG com.zexi.wiki.mapper.EbookMapper.selectByExample  :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-04-08 22:17:33.204 DEBUG com.zexi.wiki.mapper.EbookMapper.selectByExample  :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2022-04-08 22:17:33.220 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-04-08 22:17:33.221 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 1, Spring Boot 入门教程, null, null, 零基础入门 Java 开发，企业级应用开发最佳首选框架, null, null, null, null
+2022-04-08 22:17:33.221 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 2, Vue 入门教程, null, null, 零基础入门 Vue 开发，企业级应用开发最佳首选框架, null, null, null, null
+2022-04-08 22:17:33.222 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 3, Python 入门教程, null, null, 零基础入门 Python 开发，企业级应用开发最佳首选框架, null, null, null, null
+2022-04-08 22:17:33.222 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 4, Mysql 入门教程, null, null, 零基础入门 Mysql 开发，企业级应用开发最佳首选框架, null, null, null, null
+2022-04-08 22:17:33.222 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 5, Oracle 入门教程, null, null, 零基础入门 Oracle 开发，企业级应用开发最佳首选框架, null, null, null, null
+2022-04-08 22:17:33.223 DEBUG com.zexi.wiki.mapper.EbookMapper.selectByExample  :137  [32m                  [0;39m <==      Total: 5
+2022-04-08 22:17:33.223 INFO  com.zexi.wiki.service.EbookService                :43   [32m                  [0;39m 总行数：5
+2022-04-08 22:17:33.223 INFO  com.zexi.wiki.service.EbookService                :44   [32m                  [0;39m 总页数：1
+2022-04-08 22:17:33.224 INFO  com.zexi.wiki.aspect.LogAspect                    :75   [32m                  [0;39m 返回结果: {"content":{"list":[{"description":"零基础入门 Java 开发，企业级应用开发最佳首选框架","id":1,"name":"Spring Boot 入门教程"},{"description":"零基础入门 Vue 开发，企业级应用开发最佳首选框架","id":2,"name":"Vue 入门教程"},{"description":"零基础入门 Python 开发，企业级应用开发最佳首选框架","id":3,"name":"Python 入门教程"},{"description":"零基础入门 Mysql 开发，企业级应用开发最佳首选框架","id":4,"name":"Mysql 入门教程"},{"description":"零基础入门 Oracle 开发，企业级应用开发最佳首选框架","id":5,"name":"Oracle 入门教程"}],"total":5},"success":true}
+2022-04-08 22:17:33.224 INFO  com.zexi.wiki.aspect.LogAspect                    :76   [32m                  [0;39m ------------- 结束 耗时：61 ms -------------
+2022-04-08 22:17:38.087 INFO  com.zexi.wiki.aspect.LogAspect                    :40   [32m                  [0;39m ------------- 开始 -------------
+2022-04-08 22:17:38.087 INFO  com.zexi.wiki.aspect.LogAspect                    :41   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-04-08 22:17:38.088 INFO  com.zexi.wiki.aspect.LogAspect                    :42   [32m                  [0;39m 类名方法: com.zexi.wiki.controller.EbookController.list
+2022-04-08 22:17:38.088 INFO  com.zexi.wiki.aspect.LogAspect                    :43   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-04-08 22:17:38.088 INFO  com.zexi.wiki.aspect.LogAspect                    :63   [32m                  [0;39m 请求参数: [{"page":1,"size":1000}]
+2022-04-08 22:17:38.104 DEBUG c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-04-08 22:17:38.104 DEBUG c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2022-04-08 22:17:38.124 TRACE c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2022-04-08 22:17:38.124 TRACE c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 5
+2022-04-08 22:17:38.124 DEBUG c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2022-04-08 22:17:38.125 DEBUG com.zexi.wiki.mapper.EbookMapper.selectByExample  :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-04-08 22:17:38.125 DEBUG com.zexi.wiki.mapper.EbookMapper.selectByExample  :137  [32m                  [0;39m ==> Parameters: 1000(Integer)
+2022-04-08 22:17:38.143 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-04-08 22:17:38.143 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 1, Spring Boot 入门教程, null, null, 零基础入门 Java 开发，企业级应用开发最佳首选框架, null, null, null, null
+2022-04-08 22:17:38.145 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 2, Vue 入门教程, null, null, 零基础入门 Vue 开发，企业级应用开发最佳首选框架, null, null, null, null
+2022-04-08 22:17:38.145 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 3, Python 入门教程, null, null, 零基础入门 Python 开发，企业级应用开发最佳首选框架, null, null, null, null
+2022-04-08 22:17:38.145 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 4, Mysql 入门教程, null, null, 零基础入门 Mysql 开发，企业级应用开发最佳首选框架, null, null, null, null
+2022-04-08 22:17:38.146 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 5, Oracle 入门教程, null, null, 零基础入门 Oracle 开发，企业级应用开发最佳首选框架, null, null, null, null
+2022-04-08 22:17:38.146 DEBUG com.zexi.wiki.mapper.EbookMapper.selectByExample  :137  [32m                  [0;39m <==      Total: 5
+2022-04-08 22:17:38.146 INFO  com.zexi.wiki.service.EbookService                :43   [32m                  [0;39m 总行数：5
+2022-04-08 22:17:38.146 INFO  com.zexi.wiki.service.EbookService                :44   [32m                  [0;39m 总页数：1
+2022-04-08 22:17:38.150 INFO  com.zexi.wiki.aspect.LogAspect                    :75   [32m                  [0;39m 返回结果: {"content":{"list":[{"description":"零基础入门 Java 开发，企业级应用开发最佳首选框架","id":1,"name":"Spring Boot 入门教程"},{"description":"零基础入门 Vue 开发，企业级应用开发最佳首选框架","id":2,"name":"Vue 入门教程"},{"description":"零基础入门 Python 开发，企业级应用开发最佳首选框架","id":3,"name":"Python 入门教程"},{"description":"零基础入门 Mysql 开发，企业级应用开发最佳首选框架","id":4,"name":"Mysql 入门教程"},{"description":"零基础入门 Oracle 开发，企业级应用开发最佳首选框架","id":5,"name":"Oracle 入门教程"}],"total":5},"success":true}
+2022-04-08 22:17:38.151 INFO  com.zexi.wiki.aspect.LogAspect                    :76   [32m                  [0;39m ------------- 结束 耗时：64 ms -------------
+2022-04-08 22:17:56.836 INFO  com.zexi.wiki.aspect.LogAspect                    :40   [32m                  [0;39m ------------- 开始 -------------
+2022-04-08 22:17:56.836 INFO  com.zexi.wiki.aspect.LogAspect                    :41   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/category/list GET
+2022-04-08 22:17:56.836 INFO  com.zexi.wiki.aspect.LogAspect                    :42   [32m                  [0;39m 类名方法: com.zexi.wiki.controller.CategoryController.list
+2022-04-08 22:17:56.836 INFO  com.zexi.wiki.aspect.LogAspect                    :43   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-04-08 22:17:56.837 INFO  com.zexi.wiki.aspect.LogAspect                    :63   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2022-04-08 22:17:56.862 DEBUG c.z.w.mapper.CategoryMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM category
+2022-04-08 22:17:56.863 DEBUG c.z.w.mapper.CategoryMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2022-04-08 22:17:56.879 TRACE c.z.w.mapper.CategoryMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2022-04-08 22:17:56.880 TRACE c.z.w.mapper.CategoryMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 15
+2022-04-08 22:17:56.880 DEBUG c.z.w.mapper.CategoryMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2022-04-08 22:17:56.881 DEBUG c.zexi.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category LIMIT ?
+2022-04-08 22:17:56.882 DEBUG c.zexi.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2022-04-08 22:17:56.897 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2022-04-08 22:17:56.898 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2022-04-08 22:17:56.898 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2022-04-08 22:17:56.899 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2022-04-08 22:17:56.899 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2022-04-08 22:17:56.899 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2022-04-08 22:17:56.899 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 202, 200, 框架应用, 202
+2022-04-08 22:17:56.899 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2022-04-08 22:17:56.900 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2022-04-08 22:17:56.900 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2022-04-08 22:17:56.900 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2022-04-08 22:17:56.900 DEBUG c.zexi.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m <==      Total: 10
+2022-04-08 22:17:56.901 INFO  com.zexi.wiki.service.CategoryService             :40   [32m                  [0;39m 总行数：15
+2022-04-08 22:17:56.902 INFO  com.zexi.wiki.service.CategoryService             :41   [32m                  [0;39m 总页数：2
+2022-04-08 22:17:56.906 INFO  com.zexi.wiki.aspect.LogAspect                    :75   [32m                  [0;39m 返回结果: {"content":{"list":[{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400}],"total":15},"success":true}
+2022-04-08 22:17:56.907 INFO  com.zexi.wiki.aspect.LogAspect                    :76   [32m                  [0;39m ------------- 结束 耗时：71 ms -------------
+2022-04-08 22:18:10.906 INFO  com.zexi.wiki.aspect.LogAspect                    :40   [32m                  [0;39m ------------- 开始 -------------
+2022-04-08 22:18:10.906 INFO  com.zexi.wiki.aspect.LogAspect                    :41   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/category/list GET
+2022-04-08 22:18:10.906 INFO  com.zexi.wiki.aspect.LogAspect                    :42   [32m                  [0;39m 类名方法: com.zexi.wiki.controller.CategoryController.list
+2022-04-08 22:18:10.906 INFO  com.zexi.wiki.aspect.LogAspect                    :43   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-04-08 22:18:10.906 INFO  com.zexi.wiki.aspect.LogAspect                    :63   [32m                  [0;39m 请求参数: [{"page":2,"size":10}]
+2022-04-08 22:18:10.923 DEBUG c.z.w.mapper.CategoryMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM category
+2022-04-08 22:18:10.923 DEBUG c.z.w.mapper.CategoryMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2022-04-08 22:18:10.944 TRACE c.z.w.mapper.CategoryMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2022-04-08 22:18:10.944 TRACE c.z.w.mapper.CategoryMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 15
+2022-04-08 22:18:10.944 DEBUG c.z.w.mapper.CategoryMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2022-04-08 22:18:10.945 DEBUG c.zexi.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category LIMIT ?, ?
+2022-04-08 22:18:10.945 DEBUG c.zexi.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 10(Integer), 10(Integer)
+2022-04-08 22:18:10.962 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2022-04-08 22:18:10.963 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2022-04-08 22:18:10.963 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 500, 0, 其它, 500
+2022-04-08 22:18:10.963 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2022-04-08 22:18:10.963 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2022-04-08 22:18:10.964 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 503, 500, 热门服务端语言, 503
+2022-04-08 22:18:10.964 DEBUG c.zexi.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m <==      Total: 5
+2022-04-08 22:18:10.964 INFO  com.zexi.wiki.service.CategoryService             :40   [32m                  [0;39m 总行数：15
+2022-04-08 22:18:10.964 INFO  com.zexi.wiki.service.CategoryService             :41   [32m                  [0;39m 总页数：2
+2022-04-08 22:18:10.965 INFO  com.zexi.wiki.aspect.LogAspect                    :75   [32m                  [0;39m 返回结果: {"content":{"list":[{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":500,"name":"其它","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502},{"id":503,"name":"热门服务端语言","parent":500,"sort":503}],"total":15},"success":true}
+2022-04-08 22:18:10.965 INFO  com.zexi.wiki.aspect.LogAspect                    :76   [32m                  [0;39m ------------- 结束 耗时：59 ms -------------
+2022-04-08 22:18:53.549 INFO  com.zexi.wiki.aspect.LogAspect                    :40   [32m                  [0;39m ------------- 开始 -------------
+2022-04-08 22:18:53.550 INFO  com.zexi.wiki.aspect.LogAspect                    :41   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/category/save POST
+2022-04-08 22:18:53.550 INFO  com.zexi.wiki.aspect.LogAspect                    :42   [32m                  [0;39m 类名方法: com.zexi.wiki.controller.CategoryController.save
+2022-04-08 22:18:53.550 INFO  com.zexi.wiki.aspect.LogAspect                    :43   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-04-08 22:18:53.550 INFO  com.zexi.wiki.aspect.LogAspect                    :63   [32m                  [0;39m 请求参数: [{"name":"1","parent":2,"sort":3}]
+2022-04-08 22:18:53.593 DEBUG com.zexi.wiki.mapper.CategoryMapper.insert        :137  [32m                  [0;39m ==>  Preparing: insert into category (id, parent, `name`, sort) values (?, ?, ?, ?)
+2022-04-08 22:18:53.594 DEBUG com.zexi.wiki.mapper.CategoryMapper.insert        :137  [32m                  [0;39m ==> Parameters: 167865833710817280(Long), 2(Long), 1(String), 3(Integer)
+2022-04-08 22:18:53.640 DEBUG com.zexi.wiki.mapper.CategoryMapper.insert        :137  [32m                  [0;39m <==    Updates: 1
+2022-04-08 22:18:53.640 INFO  com.zexi.wiki.aspect.LogAspect                    :75   [32m                  [0;39m 返回结果: {"success":true}
+2022-04-08 22:18:53.641 INFO  com.zexi.wiki.aspect.LogAspect                    :76   [32m                  [0;39m ------------- 结束 耗时：92 ms -------------
+2022-04-08 22:18:53.675 INFO  com.zexi.wiki.aspect.LogAspect                    :40   [32m                  [0;39m ------------- 开始 -------------
+2022-04-08 22:18:53.675 INFO  com.zexi.wiki.aspect.LogAspect                    :41   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/category/list GET
+2022-04-08 22:18:53.676 INFO  com.zexi.wiki.aspect.LogAspect                    :42   [32m                  [0;39m 类名方法: com.zexi.wiki.controller.CategoryController.list
+2022-04-08 22:18:53.676 INFO  com.zexi.wiki.aspect.LogAspect                    :43   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-04-08 22:18:53.676 INFO  com.zexi.wiki.aspect.LogAspect                    :63   [32m                  [0;39m 请求参数: [{"page":2,"size":10}]
+2022-04-08 22:18:53.677 DEBUG c.z.w.mapper.CategoryMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM category
+2022-04-08 22:18:53.677 DEBUG c.z.w.mapper.CategoryMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2022-04-08 22:18:53.692 TRACE c.z.w.mapper.CategoryMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2022-04-08 22:18:53.693 TRACE c.z.w.mapper.CategoryMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 16
+2022-04-08 22:18:53.693 DEBUG c.z.w.mapper.CategoryMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2022-04-08 22:18:53.693 DEBUG c.zexi.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category LIMIT ?, ?
+2022-04-08 22:18:53.694 DEBUG c.zexi.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 10(Integer), 10(Integer)
+2022-04-08 22:18:53.710 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2022-04-08 22:18:53.710 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2022-04-08 22:18:53.711 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 500, 0, 其它, 500
+2022-04-08 22:18:53.711 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2022-04-08 22:18:53.711 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2022-04-08 22:18:53.712 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 503, 500, 热门服务端语言, 503
+2022-04-08 22:18:53.712 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 167865833710817280, 2, 1, 3
+2022-04-08 22:18:53.712 DEBUG c.zexi.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m <==      Total: 6
+2022-04-08 22:18:53.712 INFO  com.zexi.wiki.service.CategoryService             :40   [32m                  [0;39m 总行数：16
+2022-04-08 22:18:53.713 INFO  com.zexi.wiki.service.CategoryService             :41   [32m                  [0;39m 总页数：2
+2022-04-08 22:18:53.715 INFO  com.zexi.wiki.aspect.LogAspect                    :75   [32m                  [0;39m 返回结果: {"content":{"list":[{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":500,"name":"其它","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502},{"id":503,"name":"热门服务端语言","parent":500,"sort":503},{"id":167865833710817280,"name":"1","parent":2,"sort":3}],"total":16},"success":true}
+2022-04-08 22:18:53.715 INFO  com.zexi.wiki.aspect.LogAspect                    :76   [32m                  [0;39m ------------- 结束 耗时：40 ms -------------
+2022-04-08 22:19:12.985 INFO  com.zexi.wiki.aspect.LogAspect                    :40   [32m                  [0;39m ------------- 开始 -------------
+2022-04-08 22:19:12.986 INFO  com.zexi.wiki.aspect.LogAspect                    :41   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-04-08 22:19:12.986 INFO  com.zexi.wiki.aspect.LogAspect                    :42   [32m                  [0;39m 类名方法: com.zexi.wiki.controller.EbookController.list
+2022-04-08 22:19:12.986 INFO  com.zexi.wiki.aspect.LogAspect                    :43   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-04-08 22:19:12.987 INFO  com.zexi.wiki.aspect.LogAspect                    :63   [32m                  [0;39m 请求参数: [{"page":1,"size":1000}]
+2022-04-08 22:19:13.015 DEBUG c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-04-08 22:19:13.015 DEBUG c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2022-04-08 22:19:13.044 TRACE c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2022-04-08 22:19:13.044 TRACE c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 5
+2022-04-08 22:19:13.044 DEBUG c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2022-04-08 22:19:13.044 DEBUG com.zexi.wiki.mapper.EbookMapper.selectByExample  :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-04-08 22:19:13.045 DEBUG com.zexi.wiki.mapper.EbookMapper.selectByExample  :137  [32m                  [0;39m ==> Parameters: 1000(Integer)
+2022-04-08 22:19:13.060 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-04-08 22:19:13.060 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 1, Spring Boot 入门教程, null, null, 零基础入门 Java 开发，企业级应用开发最佳首选框架, null, null, null, null
+2022-04-08 22:19:13.060 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 2, Vue 入门教程, null, null, 零基础入门 Vue 开发，企业级应用开发最佳首选框架, null, null, null, null
+2022-04-08 22:19:13.061 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 3, Python 入门教程, null, null, 零基础入门 Python 开发，企业级应用开发最佳首选框架, null, null, null, null
+2022-04-08 22:19:13.061 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 4, Mysql 入门教程, null, null, 零基础入门 Mysql 开发，企业级应用开发最佳首选框架, null, null, null, null
+2022-04-08 22:19:13.061 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 5, Oracle 入门教程, null, null, 零基础入门 Oracle 开发，企业级应用开发最佳首选框架, null, null, null, null
+2022-04-08 22:19:13.061 DEBUG com.zexi.wiki.mapper.EbookMapper.selectByExample  :137  [32m                  [0;39m <==      Total: 5
+2022-04-08 22:19:13.062 INFO  com.zexi.wiki.service.EbookService                :43   [32m                  [0;39m 总行数：5
+2022-04-08 22:19:13.062 INFO  com.zexi.wiki.service.EbookService                :44   [32m                  [0;39m 总页数：1
+2022-04-08 22:19:13.062 INFO  com.zexi.wiki.aspect.LogAspect                    :75   [32m                  [0;39m 返回结果: {"content":{"list":[{"description":"零基础入门 Java 开发，企业级应用开发最佳首选框架","id":1,"name":"Spring Boot 入门教程"},{"description":"零基础入门 Vue 开发，企业级应用开发最佳首选框架","id":2,"name":"Vue 入门教程"},{"description":"零基础入门 Python 开发，企业级应用开发最佳首选框架","id":3,"name":"Python 入门教程"},{"description":"零基础入门 Mysql 开发，企业级应用开发最佳首选框架","id":4,"name":"Mysql 入门教程"},{"description":"零基础入门 Oracle 开发，企业级应用开发最佳首选框架","id":5,"name":"Oracle 入门教程"}],"total":5},"success":true}
+2022-04-08 22:19:13.062 INFO  com.zexi.wiki.aspect.LogAspect                    :76   [32m                  [0;39m ------------- 结束 耗时：77 ms -------------
