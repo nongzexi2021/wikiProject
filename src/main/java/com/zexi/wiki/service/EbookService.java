@@ -4,9 +4,9 @@ import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.zexi.wiki.domain.Ebook;
 import com.zexi.wiki.domain.EbookExample;
-import com.zexi.wiki.domain.EbookSaveReq;
 import com.zexi.wiki.mapper.EbookMapper;
 import com.zexi.wiki.req.EbookQueryReq;
+import com.zexi.wiki.req.EbookSaveReq;
 import com.zexi.wiki.resp.EbookQueryResp;
 import com.zexi.wiki.resp.PageResp;
 import com.zexi.wiki.util.CopyUtil;
@@ -35,6 +35,9 @@ public class EbookService {
         EbookExample.Criteria criteria = ebookExample.createCriteria();
         if (!ObjectUtils.isEmpty(req.getName())) {
             criteria.andNameLike("%" + req.getName() + "%");
+        }
+        if (!ObjectUtils.isEmpty(req.getCategoryId2())) {
+            criteria.andCategory2IdEqualTo(req.getCategoryId2());
         }
         PageHelper.startPage(req.getPage(), req.getSize());
         List<Ebook> ebookList = ebookMapper.selectByExample(ebookExample);
@@ -70,7 +73,7 @@ public class EbookService {
         Ebook ebook = CopyUtil.copy(req, Ebook.class);
         if (ObjectUtils.isEmpty(req.getId())) {
             // 新增
-            snowFlake.nextId();
+            ebook.setId(snowFlake.nextId());
             ebookMapper.insert(ebook);
         } else {
             // 更新
@@ -78,10 +81,6 @@ public class EbookService {
         }
     }
 
-    /**
-     * 删除
-     * @param id
-     */
     public void delete(Long id) {
         ebookMapper.deleteByPrimaryKey(id);
     }
