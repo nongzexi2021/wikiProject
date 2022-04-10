@@ -1,0 +1,10 @@
+2022-04-09 00:09:45.126 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m                  [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m1s638ms).
+2022-04-09 00:26:21.207 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m                  [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m6s51ms).
+2022-04-09 02:27:16.156 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m                  [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h24s953ms).
+2022-04-09 04:28:11.090 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m                  [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h24s947ms).
+2022-04-09 06:29:06.093 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m                  [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h24s995ms).
+2022-04-09 06:45:03.031 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m                  [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m56s938ms).
+2022-04-09 08:55:05.234 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m                  [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h10m1s483ms).
+2022-04-09 21:38:32.151 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m                  [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=30m20s517ms).
+2022-04-09 21:58:13.453 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m                  [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m11s265ms).
+2022-04-09 23:58:37.951 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m                  [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h24s499ms).
