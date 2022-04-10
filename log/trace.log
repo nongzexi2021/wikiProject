@@ -1356,3 +1356,1018 @@
 2022-04-10 09:51:34.489 DEBUG com.zexi.wiki.mapper.DocMapper.selectByExample    :137  [32m                  [0;39m <==      Total: 6
 2022-04-10 09:51:34.493 INFO  com.zexi.wiki.aspect.LogAspect                    :75   [32m                  [0;39m 返回结果: {"content":[{"ebookId":1,"id":1,"name":"文档1","parent":0,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":2,"name":"文档1.1","parent":1,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":4,"name":"文档2.1","parent":3,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":6,"name":"文档2.2.1","parent":5,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":3,"name":"文档2","parent":0,"sort":2,"viewCount":0,"voteCount":0},{"ebookId":1,"id":5,"name":"文档2.2","parent":3,"sort":2,"viewCount":0,"voteCount":0}],"success":true}
 2022-04-10 09:51:34.493 INFO  com.zexi.wiki.aspect.LogAspect                    :76   [32m                  [0;39m ------------- 结束 耗时：45 ms -------------
+2022-04-10 10:02:03.435 INFO  com.zexi.wiki.aspect.LogAspect                    :40   [32m                  [0;39m ------------- 开始 -------------
+2022-04-10 10:02:03.435 INFO  com.zexi.wiki.aspect.LogAspect                    :41   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/doc/all GET
+2022-04-10 10:02:03.435 INFO  com.zexi.wiki.aspect.LogAspect                    :42   [32m                  [0;39m 类名方法: com.zexi.wiki.controller.DocController.all
+2022-04-10 10:02:03.436 INFO  com.zexi.wiki.aspect.LogAspect                    :43   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-04-10 10:02:03.436 INFO  com.zexi.wiki.aspect.LogAspect                    :63   [32m                  [0;39m 请求参数: []
+2022-04-10 10:02:03.452 DEBUG com.zexi.wiki.mapper.DocMapper.selectByExample    :137  [32m                  [0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc order by sort asc
+2022-04-10 10:02:03.453 DEBUG com.zexi.wiki.mapper.DocMapper.selectByExample    :137  [32m                  [0;39m ==> Parameters: 
+2022-04-10 10:02:03.473 TRACE com.zexi.wiki.mapper.DocMapper.selectByExample    :143  [32m                  [0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2022-04-10 10:02:03.474 TRACE com.zexi.wiki.mapper.DocMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 1, 1, 0, 文档1, 1, 0, 0
+2022-04-10 10:02:03.474 TRACE com.zexi.wiki.mapper.DocMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 2, 1, 1, 文档1.1, 1, 0, 0
+2022-04-10 10:02:03.474 TRACE com.zexi.wiki.mapper.DocMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 4, 1, 3, 文档2.1, 1, 0, 0
+2022-04-10 10:02:03.475 TRACE com.zexi.wiki.mapper.DocMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 6, 1, 5, 文档2.2.1, 1, 0, 0
+2022-04-10 10:02:03.475 TRACE com.zexi.wiki.mapper.DocMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 3, 1, 0, 文档2, 2, 0, 0
+2022-04-10 10:02:03.475 TRACE com.zexi.wiki.mapper.DocMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 5, 1, 3, 文档2.2, 2, 0, 0
+2022-04-10 10:02:03.475 DEBUG com.zexi.wiki.mapper.DocMapper.selectByExample    :137  [32m                  [0;39m <==      Total: 6
+2022-04-10 10:02:03.476 INFO  com.zexi.wiki.aspect.LogAspect                    :75   [32m                  [0;39m 返回结果: {"content":[{"ebookId":1,"id":1,"name":"文档1","parent":0,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":2,"name":"文档1.1","parent":1,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":4,"name":"文档2.1","parent":3,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":6,"name":"文档2.2.1","parent":5,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":3,"name":"文档2","parent":0,"sort":2,"viewCount":0,"voteCount":0},{"ebookId":1,"id":5,"name":"文档2.2","parent":3,"sort":2,"viewCount":0,"voteCount":0}],"success":true}
+2022-04-10 10:02:03.476 INFO  com.zexi.wiki.aspect.LogAspect                    :76   [32m                  [0;39m ------------- 结束 耗时：41 ms -------------
+2022-04-10 10:07:08.408 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2022-04-10 10:07:08.408 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-4 - Shutdown initiated...
+2022-04-10 10:07:08.410 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-4 - Shutdown completed.
+2022-04-10 10:07:13.498 INFO  com.zexi.wiki.config.WikiApplication              :55   [32m                  [0;39m Starting WikiApplication using Java 17.0.1 on Nongs-MacBook-Pro.local with PID 73689 (/Users/nongzexi/Desktop/temp/wiki/target/classes started by nongzexi in /Users/nongzexi/Desktop/temp/wiki)
+2022-04-10 10:07:13.498 INFO  com.zexi.wiki.config.WikiApplication              :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2022-04-10 10:07:13.688 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2022-04-10 10:07:13.688 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2022-04-10 10:07:13.688 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-04-10 10:07:13.689 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2022-04-10 10:07:13.700 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-04-10 10:07:13.700 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 200 ms
+2022-04-10 10:07:13.903 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2022-04-10 10:07:14.016 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2022-04-10 10:07:14.033 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2022-04-10 10:07:14.034 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2022-04-10 10:07:14.037 INFO  com.zexi.wiki.config.WikiApplication              :61   [32m                  [0;39m Started WikiApplication in 5.564 seconds (JVM running for 59040.587)
+2022-04-10 10:07:14.038 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-04-10 10:07:14.038 INFO  com.zexi.wiki.config.WikiApplication              :20   [32m                  [0;39m 启动成功
+2022-04-10 10:07:14.038 INFO  com.zexi.wiki.config.WikiApplication              :21   [32m                  [0;39m 地址： 	http://127.0.0.1: 8880
+2022-04-10 10:07:33.060 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2022-04-10 10:07:38.146 INFO  com.zexi.wiki.config.WikiApplication              :55   [32m                  [0;39m Starting WikiApplication using Java 17.0.1 on Nongs-MacBook-Pro.local with PID 73689 (/Users/nongzexi/Desktop/temp/wiki/target/classes started by nongzexi in /Users/nongzexi/Desktop/temp/wiki)
+2022-04-10 10:07:38.146 INFO  com.zexi.wiki.config.WikiApplication              :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2022-04-10 10:07:38.335 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2022-04-10 10:07:38.335 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2022-04-10 10:07:38.335 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-04-10 10:07:38.335 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2022-04-10 10:07:38.347 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-04-10 10:07:38.347 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 200 ms
+2022-04-10 10:07:38.549 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2022-04-10 10:07:38.679 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2022-04-10 10:07:38.685 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2022-04-10 10:07:38.687 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2022-04-10 10:07:38.690 INFO  com.zexi.wiki.config.WikiApplication              :61   [32m                  [0;39m Started WikiApplication in 5.57 seconds (JVM running for 59065.24)
+2022-04-10 10:07:38.691 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-04-10 10:07:38.692 INFO  com.zexi.wiki.config.WikiApplication              :20   [32m                  [0;39m 启动成功
+2022-04-10 10:07:38.692 INFO  com.zexi.wiki.config.WikiApplication              :21   [32m                  [0;39m 地址： 	http://127.0.0.1: 8880
+2022-04-10 10:07:40.147 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2022-04-10 10:07:40.220 INFO  com.zexi.wiki.config.WikiApplication              :55   [32m                  [0;39m Starting WikiApplication using Java 17.0.1 on Nongs-MacBook-Pro.local with PID 73689 (/Users/nongzexi/Desktop/temp/wiki/target/classes started by nongzexi in /Users/nongzexi/Desktop/temp/wiki)
+2022-04-10 10:07:40.221 INFO  com.zexi.wiki.config.WikiApplication              :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2022-04-10 10:07:40.372 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2022-04-10 10:07:40.373 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2022-04-10 10:07:40.373 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-04-10 10:07:40.373 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2022-04-10 10:07:40.378 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-04-10 10:07:40.379 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 157 ms
+2022-04-10 10:07:40.588 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2022-04-10 10:07:40.737 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2022-04-10 10:07:40.743 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2022-04-10 10:07:40.745 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2022-04-10 10:07:40.748 INFO  com.zexi.wiki.config.WikiApplication              :61   [32m                  [0;39m Started WikiApplication in 0.546 seconds (JVM running for 59067.297)
+2022-04-10 10:07:40.749 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-04-10 10:07:40.749 INFO  com.zexi.wiki.config.WikiApplication              :20   [32m                  [0;39m 启动成功
+2022-04-10 10:07:40.749 INFO  com.zexi.wiki.config.WikiApplication              :21   [32m                  [0;39m 地址： 	http://127.0.0.1: 8880
+2022-04-10 10:07:42.204 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-10 10:07:42.205 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2022-04-10 10:07:42.205 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 0 ms
+2022-04-10 10:07:42.207 INFO  com.zexi.wiki.aspect.LogAspect                    :40   [32m                  [0;39m ------------- 开始 -------------
+2022-04-10 10:07:42.207 INFO  com.zexi.wiki.aspect.LogAspect                    :41   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2022-04-10 10:07:42.207 INFO  com.zexi.wiki.aspect.LogAspect                    :42   [32m                  [0;39m 类名方法: com.zexi.wiki.controller.CategoryController.all
+2022-04-10 10:07:42.207 INFO  com.zexi.wiki.aspect.LogAspect                    :43   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-04-10 10:07:42.207 INFO  com.zexi.wiki.aspect.LogAspect                    :63   [32m                  [0;39m 请求参数: []
+2022-04-10 10:07:42.211 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-5 - Starting...
+2022-04-10 10:07:42.404 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-5 - Start completed.
+2022-04-10 10:07:42.404 DEBUG c.zexi.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2022-04-10 10:07:42.405 DEBUG c.zexi.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 
+2022-04-10 10:07:42.422 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2022-04-10 10:07:42.422 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2022-04-10 10:07:42.423 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2022-04-10 10:07:42.423 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2022-04-10 10:07:42.423 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2022-04-10 10:07:42.423 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2022-04-10 10:07:42.423 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 202, 200, 框架应用, 202
+2022-04-10 10:07:42.424 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2022-04-10 10:07:42.424 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2022-04-10 10:07:42.424 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2022-04-10 10:07:42.424 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2022-04-10 10:07:42.424 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2022-04-10 10:07:42.424 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 500, 0, 其它, 500
+2022-04-10 10:07:42.425 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2022-04-10 10:07:42.425 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2022-04-10 10:07:42.425 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 503, 500, 热门服务端语言, 503
+2022-04-10 10:07:42.425 DEBUG c.zexi.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m <==      Total: 15
+2022-04-10 10:07:42.430 INFO  com.zexi.wiki.aspect.LogAspect                    :75   [32m                  [0;39m 返回结果: {"content":[{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":500,"name":"其它","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502},{"id":503,"name":"热门服务端语言","parent":500,"sort":503}],"success":true}
+2022-04-10 10:07:42.430 INFO  com.zexi.wiki.aspect.LogAspect                    :76   [32m                  [0;39m ------------- 结束 耗时：224 ms -------------
+2022-04-10 10:08:39.617 INFO  com.zexi.wiki.aspect.LogAspect                    :40   [32m                  [0;39m ------------- 开始 -------------
+2022-04-10 10:08:39.617 INFO  com.zexi.wiki.aspect.LogAspect                    :41   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2022-04-10 10:08:39.617 INFO  com.zexi.wiki.aspect.LogAspect                    :42   [32m                  [0;39m 类名方法: com.zexi.wiki.controller.CategoryController.all
+2022-04-10 10:08:39.617 INFO  com.zexi.wiki.aspect.LogAspect                    :43   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-04-10 10:08:39.617 INFO  com.zexi.wiki.aspect.LogAspect                    :63   [32m                  [0;39m 请求参数: []
+2022-04-10 10:08:39.645 DEBUG c.zexi.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2022-04-10 10:08:39.645 DEBUG c.zexi.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 
+2022-04-10 10:08:39.665 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2022-04-10 10:08:39.666 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2022-04-10 10:08:39.667 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2022-04-10 10:08:39.667 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2022-04-10 10:08:39.667 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2022-04-10 10:08:39.667 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2022-04-10 10:08:39.668 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 202, 200, 框架应用, 202
+2022-04-10 10:08:39.668 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2022-04-10 10:08:39.668 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2022-04-10 10:08:39.668 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2022-04-10 10:08:39.668 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2022-04-10 10:08:39.669 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2022-04-10 10:08:39.669 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 500, 0, 其它, 500
+2022-04-10 10:08:39.669 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2022-04-10 10:08:39.669 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2022-04-10 10:08:39.669 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 503, 500, 热门服务端语言, 503
+2022-04-10 10:08:39.669 DEBUG c.zexi.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m <==      Total: 15
+2022-04-10 10:08:39.671 INFO  com.zexi.wiki.aspect.LogAspect                    :75   [32m                  [0;39m 返回结果: {"content":[{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":500,"name":"其它","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502},{"id":503,"name":"热门服务端语言","parent":500,"sort":503}],"success":true}
+2022-04-10 10:08:39.671 INFO  com.zexi.wiki.aspect.LogAspect                    :76   [32m                  [0;39m ------------- 结束 耗时：54 ms -------------
+2022-04-10 10:08:50.287 INFO  com.zexi.wiki.aspect.LogAspect                    :40   [32m                  [0;39m ------------- 开始 -------------
+2022-04-10 10:08:50.287 INFO  com.zexi.wiki.aspect.LogAspect                    :41   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2022-04-10 10:08:50.287 INFO  com.zexi.wiki.aspect.LogAspect                    :42   [32m                  [0;39m 类名方法: com.zexi.wiki.controller.CategoryController.all
+2022-04-10 10:08:50.287 INFO  com.zexi.wiki.aspect.LogAspect                    :43   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-04-10 10:08:50.287 INFO  com.zexi.wiki.aspect.LogAspect                    :63   [32m                  [0;39m 请求参数: []
+2022-04-10 10:08:50.306 DEBUG c.zexi.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2022-04-10 10:08:50.306 DEBUG c.zexi.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 
+2022-04-10 10:08:50.324 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2022-04-10 10:08:50.325 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2022-04-10 10:08:50.325 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2022-04-10 10:08:50.325 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2022-04-10 10:08:50.325 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2022-04-10 10:08:50.325 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2022-04-10 10:08:50.326 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 202, 200, 框架应用, 202
+2022-04-10 10:08:50.326 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2022-04-10 10:08:50.326 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2022-04-10 10:08:50.326 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2022-04-10 10:08:50.326 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2022-04-10 10:08:50.326 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2022-04-10 10:08:50.327 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 500, 0, 其它, 500
+2022-04-10 10:08:50.327 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2022-04-10 10:08:50.327 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2022-04-10 10:08:50.327 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 503, 500, 热门服务端语言, 503
+2022-04-10 10:08:50.327 DEBUG c.zexi.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m <==      Total: 15
+2022-04-10 10:08:50.328 INFO  com.zexi.wiki.aspect.LogAspect                    :75   [32m                  [0;39m 返回结果: {"content":[{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":500,"name":"其它","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502},{"id":503,"name":"热门服务端语言","parent":500,"sort":503}],"success":true}
+2022-04-10 10:08:50.328 INFO  com.zexi.wiki.aspect.LogAspect                    :76   [32m                  [0;39m ------------- 结束 耗时：41 ms -------------
+2022-04-10 10:08:50.703 INFO  com.zexi.wiki.aspect.LogAspect                    :40   [32m                  [0;39m ------------- 开始 -------------
+2022-04-10 10:08:50.704 INFO  com.zexi.wiki.aspect.LogAspect                    :41   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2022-04-10 10:08:50.704 INFO  com.zexi.wiki.aspect.LogAspect                    :42   [32m                  [0;39m 类名方法: com.zexi.wiki.controller.CategoryController.all
+2022-04-10 10:08:50.704 INFO  com.zexi.wiki.aspect.LogAspect                    :43   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-04-10 10:08:50.704 INFO  com.zexi.wiki.aspect.LogAspect                    :63   [32m                  [0;39m 请求参数: []
+2022-04-10 10:08:50.705 DEBUG c.zexi.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2022-04-10 10:08:50.705 DEBUG c.zexi.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 
+2022-04-10 10:08:50.731 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2022-04-10 10:08:50.731 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2022-04-10 10:08:50.731 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2022-04-10 10:08:50.732 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2022-04-10 10:08:50.732 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2022-04-10 10:08:50.732 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2022-04-10 10:08:50.732 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 202, 200, 框架应用, 202
+2022-04-10 10:08:50.732 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2022-04-10 10:08:50.733 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2022-04-10 10:08:50.733 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2022-04-10 10:08:50.733 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2022-04-10 10:08:50.733 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2022-04-10 10:08:50.733 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 500, 0, 其它, 500
+2022-04-10 10:08:50.733 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2022-04-10 10:08:50.733 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2022-04-10 10:08:50.734 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 503, 500, 热门服务端语言, 503
+2022-04-10 10:08:50.734 DEBUG c.zexi.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m <==      Total: 15
+2022-04-10 10:08:50.734 INFO  com.zexi.wiki.aspect.LogAspect                    :75   [32m                  [0;39m 返回结果: {"content":[{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":500,"name":"其它","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502},{"id":503,"name":"热门服务端语言","parent":500,"sort":503}],"success":true}
+2022-04-10 10:08:50.734 INFO  com.zexi.wiki.aspect.LogAspect                    :76   [32m                  [0;39m ------------- 结束 耗时：31 ms -------------
+2022-04-10 10:08:50.753 INFO  com.zexi.wiki.aspect.LogAspect                    :40   [32m                  [0;39m ------------- 开始 -------------
+2022-04-10 10:08:50.753 INFO  com.zexi.wiki.aspect.LogAspect                    :41   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-04-10 10:08:50.753 INFO  com.zexi.wiki.aspect.LogAspect                    :42   [32m                  [0;39m 类名方法: com.zexi.wiki.controller.EbookController.list
+2022-04-10 10:08:50.753 INFO  com.zexi.wiki.aspect.LogAspect                    :43   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-04-10 10:08:50.754 INFO  com.zexi.wiki.aspect.LogAspect                    :63   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2022-04-10 10:08:50.758 DEBUG c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-04-10 10:08:50.759 DEBUG c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2022-04-10 10:08:50.777 TRACE c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2022-04-10 10:08:50.778 TRACE c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 5
+2022-04-10 10:08:50.778 DEBUG c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2022-04-10 10:08:50.779 DEBUG com.zexi.wiki.mapper.EbookMapper.selectByExample  :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-04-10 10:08:50.779 DEBUG com.zexi.wiki.mapper.EbookMapper.selectByExample  :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2022-04-10 10:08:50.798 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-04-10 10:08:50.801 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 1, Spring Boot 入门教程, null, null, 零基础入门 Java 开发，企业级应用开发最佳首选框架, null, null, null, null
+2022-04-10 10:08:50.801 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 2, Vue 入门教程, null, null, 零基础入门 Vue 开发，企业级应用开发最佳首选框架, null, null, null, null
+2022-04-10 10:08:50.802 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 3, Python 入门教程, null, null, 零基础入门 Python 开发，企业级应用开发最佳首选框架, null, null, null, null
+2022-04-10 10:08:50.802 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 4, Mysql 入门教程, null, null, 零基础入门 Mysql 开发，企业级应用开发最佳首选框架, null, null, null, null
+2022-04-10 10:08:50.802 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 5, Oracle 入门教程, null, null, 零基础入门 Oracle 开发，企业级应用开发最佳首选框架, null, null, null, null
+2022-04-10 10:08:50.802 DEBUG com.zexi.wiki.mapper.EbookMapper.selectByExample  :137  [32m                  [0;39m <==      Total: 5
+2022-04-10 10:08:50.802 INFO  com.zexi.wiki.service.EbookService                :46   [32m                  [0;39m 总行数：5
+2022-04-10 10:08:50.803 INFO  com.zexi.wiki.service.EbookService                :47   [32m                  [0;39m 总页数：1
+2022-04-10 10:08:50.834 INFO  com.zexi.wiki.aspect.LogAspect                    :75   [32m                  [0;39m 返回结果: {"content":{"list":[{"description":"零基础入门 Java 开发，企业级应用开发最佳首选框架","id":1,"name":"Spring Boot 入门教程"},{"description":"零基础入门 Vue 开发，企业级应用开发最佳首选框架","id":2,"name":"Vue 入门教程"},{"description":"零基础入门 Python 开发，企业级应用开发最佳首选框架","id":3,"name":"Python 入门教程"},{"description":"零基础入门 Mysql 开发，企业级应用开发最佳首选框架","id":4,"name":"Mysql 入门教程"},{"description":"零基础入门 Oracle 开发，企业级应用开发最佳首选框架","id":5,"name":"Oracle 入门教程"}],"total":5},"success":true}
+2022-04-10 10:08:50.900 INFO  com.zexi.wiki.aspect.LogAspect                    :76   [32m                  [0;39m ------------- 结束 耗时：148 ms -------------
+2022-04-10 10:08:52.909 INFO  com.zexi.wiki.aspect.LogAspect                    :40   [32m                  [0;39m ------------- 开始 -------------
+2022-04-10 10:08:52.909 INFO  com.zexi.wiki.aspect.LogAspect                    :41   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2022-04-10 10:08:52.909 INFO  com.zexi.wiki.aspect.LogAspect                    :42   [32m                  [0;39m 类名方法: com.zexi.wiki.controller.CategoryController.all
+2022-04-10 10:08:52.909 INFO  com.zexi.wiki.aspect.LogAspect                    :43   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-04-10 10:08:52.909 INFO  com.zexi.wiki.aspect.LogAspect                    :63   [32m                  [0;39m 请求参数: []
+2022-04-10 10:08:52.932 DEBUG c.zexi.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2022-04-10 10:08:52.936 DEBUG c.zexi.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 
+2022-04-10 10:08:52.949 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2022-04-10 10:08:52.950 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2022-04-10 10:08:52.950 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2022-04-10 10:08:52.950 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2022-04-10 10:08:52.950 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2022-04-10 10:08:52.951 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2022-04-10 10:08:52.951 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 202, 200, 框架应用, 202
+2022-04-10 10:08:52.951 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2022-04-10 10:08:52.951 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2022-04-10 10:08:52.951 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2022-04-10 10:08:52.951 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2022-04-10 10:08:52.952 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2022-04-10 10:08:52.952 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 500, 0, 其它, 500
+2022-04-10 10:08:52.952 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2022-04-10 10:08:52.952 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2022-04-10 10:08:52.952 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 503, 500, 热门服务端语言, 503
+2022-04-10 10:08:52.952 DEBUG c.zexi.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m <==      Total: 15
+2022-04-10 10:08:52.953 INFO  com.zexi.wiki.aspect.LogAspect                    :75   [32m                  [0;39m 返回结果: {"content":[{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":500,"name":"其它","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502},{"id":503,"name":"热门服务端语言","parent":500,"sort":503}],"success":true}
+2022-04-10 10:08:52.953 INFO  com.zexi.wiki.aspect.LogAspect                    :76   [32m                  [0;39m ------------- 结束 耗时：45 ms -------------
+2022-04-10 10:08:54.171 INFO  com.zexi.wiki.aspect.LogAspect                    :40   [32m                  [0;39m ------------- 开始 -------------
+2022-04-10 10:08:54.171 INFO  com.zexi.wiki.aspect.LogAspect                    :41   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2022-04-10 10:08:54.172 INFO  com.zexi.wiki.aspect.LogAspect                    :42   [32m                  [0;39m 类名方法: com.zexi.wiki.controller.CategoryController.all
+2022-04-10 10:08:54.172 INFO  com.zexi.wiki.aspect.LogAspect                    :43   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-04-10 10:08:54.172 INFO  com.zexi.wiki.aspect.LogAspect                    :63   [32m                  [0;39m 请求参数: []
+2022-04-10 10:08:54.193 DEBUG c.zexi.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2022-04-10 10:08:54.193 DEBUG c.zexi.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 
+2022-04-10 10:08:54.209 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2022-04-10 10:08:54.209 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2022-04-10 10:08:54.209 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2022-04-10 10:08:54.209 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2022-04-10 10:08:54.209 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2022-04-10 10:08:54.210 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2022-04-10 10:08:54.210 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 202, 200, 框架应用, 202
+2022-04-10 10:08:54.210 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2022-04-10 10:08:54.210 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2022-04-10 10:08:54.210 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2022-04-10 10:08:54.210 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2022-04-10 10:08:54.211 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2022-04-10 10:08:54.211 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 500, 0, 其它, 500
+2022-04-10 10:08:54.211 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2022-04-10 10:08:54.211 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2022-04-10 10:08:54.211 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 503, 500, 热门服务端语言, 503
+2022-04-10 10:08:54.211 DEBUG c.zexi.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m <==      Total: 15
+2022-04-10 10:08:54.212 INFO  com.zexi.wiki.aspect.LogAspect                    :75   [32m                  [0;39m 返回结果: {"content":[{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":500,"name":"其它","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502},{"id":503,"name":"热门服务端语言","parent":500,"sort":503}],"success":true}
+2022-04-10 10:08:54.212 INFO  com.zexi.wiki.aspect.LogAspect                    :76   [32m                  [0;39m ------------- 结束 耗时：41 ms -------------
+2022-04-10 10:08:54.573 INFO  com.zexi.wiki.aspect.LogAspect                    :40   [32m                  [0;39m ------------- 开始 -------------
+2022-04-10 10:08:54.573 INFO  com.zexi.wiki.aspect.LogAspect                    :41   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2022-04-10 10:08:54.573 INFO  com.zexi.wiki.aspect.LogAspect                    :42   [32m                  [0;39m 类名方法: com.zexi.wiki.controller.CategoryController.all
+2022-04-10 10:08:54.573 INFO  com.zexi.wiki.aspect.LogAspect                    :43   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-04-10 10:08:54.573 INFO  com.zexi.wiki.aspect.LogAspect                    :63   [32m                  [0;39m 请求参数: []
+2022-04-10 10:08:54.574 DEBUG c.zexi.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2022-04-10 10:08:54.574 DEBUG c.zexi.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 
+2022-04-10 10:08:54.589 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2022-04-10 10:08:54.589 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2022-04-10 10:08:54.590 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2022-04-10 10:08:54.590 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2022-04-10 10:08:54.591 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2022-04-10 10:08:54.591 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2022-04-10 10:08:54.591 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 202, 200, 框架应用, 202
+2022-04-10 10:08:54.591 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2022-04-10 10:08:54.591 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2022-04-10 10:08:54.591 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2022-04-10 10:08:54.592 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2022-04-10 10:08:54.592 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2022-04-10 10:08:54.592 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 500, 0, 其它, 500
+2022-04-10 10:08:54.592 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2022-04-10 10:08:54.592 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2022-04-10 10:08:54.593 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 503, 500, 热门服务端语言, 503
+2022-04-10 10:08:54.593 DEBUG c.zexi.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m <==      Total: 15
+2022-04-10 10:08:54.594 INFO  com.zexi.wiki.aspect.LogAspect                    :75   [32m                  [0;39m 返回结果: {"content":[{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":500,"name":"其它","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502},{"id":503,"name":"热门服务端语言","parent":500,"sort":503}],"success":true}
+2022-04-10 10:08:54.594 INFO  com.zexi.wiki.aspect.LogAspect                    :76   [32m                  [0;39m ------------- 结束 耗时：21 ms -------------
+2022-04-10 10:08:54.605 INFO  com.zexi.wiki.aspect.LogAspect                    :40   [32m                  [0;39m ------------- 开始 -------------
+2022-04-10 10:08:54.605 INFO  com.zexi.wiki.aspect.LogAspect                    :41   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-04-10 10:08:54.605 INFO  com.zexi.wiki.aspect.LogAspect                    :42   [32m                  [0;39m 类名方法: com.zexi.wiki.controller.EbookController.list
+2022-04-10 10:08:54.605 INFO  com.zexi.wiki.aspect.LogAspect                    :43   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-04-10 10:08:54.605 INFO  com.zexi.wiki.aspect.LogAspect                    :63   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2022-04-10 10:08:54.606 DEBUG c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-04-10 10:08:54.607 DEBUG c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2022-04-10 10:08:54.621 TRACE c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2022-04-10 10:08:54.621 TRACE c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 5
+2022-04-10 10:08:54.621 DEBUG c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2022-04-10 10:08:54.622 DEBUG com.zexi.wiki.mapper.EbookMapper.selectByExample  :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-04-10 10:08:54.622 DEBUG com.zexi.wiki.mapper.EbookMapper.selectByExample  :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2022-04-10 10:08:54.639 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-04-10 10:08:54.640 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 1, Spring Boot 入门教程, null, null, 零基础入门 Java 开发，企业级应用开发最佳首选框架, null, null, null, null
+2022-04-10 10:08:54.640 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 2, Vue 入门教程, null, null, 零基础入门 Vue 开发，企业级应用开发最佳首选框架, null, null, null, null
+2022-04-10 10:08:54.640 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 3, Python 入门教程, null, null, 零基础入门 Python 开发，企业级应用开发最佳首选框架, null, null, null, null
+2022-04-10 10:08:54.640 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 4, Mysql 入门教程, null, null, 零基础入门 Mysql 开发，企业级应用开发最佳首选框架, null, null, null, null
+2022-04-10 10:08:54.640 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 5, Oracle 入门教程, null, null, 零基础入门 Oracle 开发，企业级应用开发最佳首选框架, null, null, null, null
+2022-04-10 10:08:54.641 DEBUG com.zexi.wiki.mapper.EbookMapper.selectByExample  :137  [32m                  [0;39m <==      Total: 5
+2022-04-10 10:08:54.641 INFO  com.zexi.wiki.service.EbookService                :46   [32m                  [0;39m 总行数：5
+2022-04-10 10:08:54.641 INFO  com.zexi.wiki.service.EbookService                :47   [32m                  [0;39m 总页数：1
+2022-04-10 10:08:54.641 INFO  com.zexi.wiki.aspect.LogAspect                    :75   [32m                  [0;39m 返回结果: {"content":{"list":[{"description":"零基础入门 Java 开发，企业级应用开发最佳首选框架","id":1,"name":"Spring Boot 入门教程"},{"description":"零基础入门 Vue 开发，企业级应用开发最佳首选框架","id":2,"name":"Vue 入门教程"},{"description":"零基础入门 Python 开发，企业级应用开发最佳首选框架","id":3,"name":"Python 入门教程"},{"description":"零基础入门 Mysql 开发，企业级应用开发最佳首选框架","id":4,"name":"Mysql 入门教程"},{"description":"零基础入门 Oracle 开发，企业级应用开发最佳首选框架","id":5,"name":"Oracle 入门教程"}],"total":5},"success":true}
+2022-04-10 10:08:54.641 INFO  com.zexi.wiki.aspect.LogAspect                    :76   [32m                  [0;39m ------------- 结束 耗时：36 ms -------------
+2022-04-10 10:08:54.900 INFO  com.zexi.wiki.aspect.LogAspect                    :40   [32m                  [0;39m ------------- 开始 -------------
+2022-04-10 10:08:54.901 INFO  com.zexi.wiki.aspect.LogAspect                    :41   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2022-04-10 10:08:54.901 INFO  com.zexi.wiki.aspect.LogAspect                    :42   [32m                  [0;39m 类名方法: com.zexi.wiki.controller.CategoryController.all
+2022-04-10 10:08:54.901 INFO  com.zexi.wiki.aspect.LogAspect                    :43   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-04-10 10:08:54.901 INFO  com.zexi.wiki.aspect.LogAspect                    :63   [32m                  [0;39m 请求参数: []
+2022-04-10 10:08:54.902 DEBUG c.zexi.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2022-04-10 10:08:54.902 DEBUG c.zexi.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 
+2022-04-10 10:08:54.917 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2022-04-10 10:08:54.918 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2022-04-10 10:08:54.918 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2022-04-10 10:08:54.918 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2022-04-10 10:08:54.919 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2022-04-10 10:08:54.919 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2022-04-10 10:08:54.919 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 202, 200, 框架应用, 202
+2022-04-10 10:08:54.919 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2022-04-10 10:08:54.920 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2022-04-10 10:08:54.920 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2022-04-10 10:08:54.920 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2022-04-10 10:08:54.920 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2022-04-10 10:08:54.920 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 500, 0, 其它, 500
+2022-04-10 10:08:54.920 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2022-04-10 10:08:54.921 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2022-04-10 10:08:54.921 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 503, 500, 热门服务端语言, 503
+2022-04-10 10:08:54.921 DEBUG c.zexi.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m <==      Total: 15
+2022-04-10 10:08:54.922 INFO  com.zexi.wiki.aspect.LogAspect                    :75   [32m                  [0;39m 返回结果: {"content":[{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":500,"name":"其它","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502},{"id":503,"name":"热门服务端语言","parent":500,"sort":503}],"success":true}
+2022-04-10 10:08:54.922 INFO  com.zexi.wiki.aspect.LogAspect                    :76   [32m                  [0;39m ------------- 结束 耗时：22 ms -------------
+2022-04-10 10:10:09.990 INFO  com.zexi.wiki.aspect.LogAspect                    :40   [32m                  [0;39m ------------- 开始 -------------
+2022-04-10 10:10:09.990 INFO  com.zexi.wiki.aspect.LogAspect                    :41   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2022-04-10 10:10:09.990 INFO  com.zexi.wiki.aspect.LogAspect                    :42   [32m                  [0;39m 类名方法: com.zexi.wiki.controller.CategoryController.all
+2022-04-10 10:10:09.991 INFO  com.zexi.wiki.aspect.LogAspect                    :43   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-04-10 10:10:09.991 INFO  com.zexi.wiki.aspect.LogAspect                    :63   [32m                  [0;39m 请求参数: []
+2022-04-10 10:10:10.008 DEBUG c.zexi.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2022-04-10 10:10:10.008 DEBUG c.zexi.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 
+2022-04-10 10:10:10.029 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2022-04-10 10:10:10.030 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2022-04-10 10:10:10.030 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2022-04-10 10:10:10.030 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2022-04-10 10:10:10.030 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2022-04-10 10:10:10.030 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2022-04-10 10:10:10.031 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 202, 200, 框架应用, 202
+2022-04-10 10:10:10.031 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2022-04-10 10:10:10.031 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2022-04-10 10:10:10.031 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2022-04-10 10:10:10.031 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2022-04-10 10:10:10.031 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2022-04-10 10:10:10.031 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 500, 0, 其它, 500
+2022-04-10 10:10:10.032 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2022-04-10 10:10:10.032 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2022-04-10 10:10:10.032 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 503, 500, 热门服务端语言, 503
+2022-04-10 10:10:10.032 DEBUG c.zexi.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m <==      Total: 15
+2022-04-10 10:10:10.033 INFO  com.zexi.wiki.aspect.LogAspect                    :75   [32m                  [0;39m 返回结果: {"content":[{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":500,"name":"其它","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502},{"id":503,"name":"热门服务端语言","parent":500,"sort":503}],"success":true}
+2022-04-10 10:10:10.033 INFO  com.zexi.wiki.aspect.LogAspect                    :76   [32m                  [0;39m ------------- 结束 耗时：43 ms -------------
+2022-04-10 10:10:10.043 INFO  com.zexi.wiki.aspect.LogAspect                    :40   [32m                  [0;39m ------------- 开始 -------------
+2022-04-10 10:10:10.043 INFO  com.zexi.wiki.aspect.LogAspect                    :41   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-04-10 10:10:10.043 INFO  com.zexi.wiki.aspect.LogAspect                    :42   [32m                  [0;39m 类名方法: com.zexi.wiki.controller.EbookController.list
+2022-04-10 10:10:10.043 INFO  com.zexi.wiki.aspect.LogAspect                    :43   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-04-10 10:10:10.045 INFO  com.zexi.wiki.aspect.LogAspect                    :63   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2022-04-10 10:10:10.046 DEBUG c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-04-10 10:10:10.047 DEBUG c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2022-04-10 10:10:10.062 TRACE c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2022-04-10 10:10:10.083 TRACE c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 5
+2022-04-10 10:10:10.084 DEBUG c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2022-04-10 10:10:10.085 DEBUG com.zexi.wiki.mapper.EbookMapper.selectByExample  :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-04-10 10:10:10.086 DEBUG com.zexi.wiki.mapper.EbookMapper.selectByExample  :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2022-04-10 10:10:10.102 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-04-10 10:10:10.102 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 1, Spring Boot 入门教程, null, null, 零基础入门 Java 开发，企业级应用开发最佳首选框架, null, null, null, null
+2022-04-10 10:10:10.102 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 2, Vue 入门教程, null, null, 零基础入门 Vue 开发，企业级应用开发最佳首选框架, null, null, null, null
+2022-04-10 10:10:10.103 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 3, Python 入门教程, null, null, 零基础入门 Python 开发，企业级应用开发最佳首选框架, null, null, null, null
+2022-04-10 10:10:10.103 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 4, Mysql 入门教程, null, null, 零基础入门 Mysql 开发，企业级应用开发最佳首选框架, null, null, null, null
+2022-04-10 10:10:10.103 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 5, Oracle 入门教程, null, null, 零基础入门 Oracle 开发，企业级应用开发最佳首选框架, null, null, null, null
+2022-04-10 10:10:10.103 DEBUG com.zexi.wiki.mapper.EbookMapper.selectByExample  :137  [32m                  [0;39m <==      Total: 5
+2022-04-10 10:10:10.103 INFO  com.zexi.wiki.service.EbookService                :46   [32m                  [0;39m 总行数：5
+2022-04-10 10:10:10.103 INFO  com.zexi.wiki.service.EbookService                :47   [32m                  [0;39m 总页数：1
+2022-04-10 10:10:10.104 INFO  com.zexi.wiki.aspect.LogAspect                    :75   [32m                  [0;39m 返回结果: {"content":{"list":[{"description":"零基础入门 Java 开发，企业级应用开发最佳首选框架","id":1,"name":"Spring Boot 入门教程"},{"description":"零基础入门 Vue 开发，企业级应用开发最佳首选框架","id":2,"name":"Vue 入门教程"},{"description":"零基础入门 Python 开发，企业级应用开发最佳首选框架","id":3,"name":"Python 入门教程"},{"description":"零基础入门 Mysql 开发，企业级应用开发最佳首选框架","id":4,"name":"Mysql 入门教程"},{"description":"零基础入门 Oracle 开发，企业级应用开发最佳首选框架","id":5,"name":"Oracle 入门教程"}],"total":5},"success":true}
+2022-04-10 10:10:10.104 INFO  com.zexi.wiki.aspect.LogAspect                    :76   [32m                  [0;39m ------------- 结束 耗时：61 ms -------------
+2022-04-10 10:10:11.183 INFO  com.zexi.wiki.aspect.LogAspect                    :40   [32m                  [0;39m ------------- 开始 -------------
+2022-04-10 10:10:11.183 INFO  com.zexi.wiki.aspect.LogAspect                    :41   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2022-04-10 10:10:11.183 INFO  com.zexi.wiki.aspect.LogAspect                    :42   [32m                  [0;39m 类名方法: com.zexi.wiki.controller.CategoryController.all
+2022-04-10 10:10:11.183 INFO  com.zexi.wiki.aspect.LogAspect                    :43   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-04-10 10:10:11.183 INFO  com.zexi.wiki.aspect.LogAspect                    :63   [32m                  [0;39m 请求参数: []
+2022-04-10 10:10:11.196 DEBUG c.zexi.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2022-04-10 10:10:11.196 DEBUG c.zexi.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 
+2022-04-10 10:10:11.215 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2022-04-10 10:10:11.216 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2022-04-10 10:10:11.216 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2022-04-10 10:10:11.216 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2022-04-10 10:10:11.216 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2022-04-10 10:10:11.216 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2022-04-10 10:10:11.216 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 202, 200, 框架应用, 202
+2022-04-10 10:10:11.217 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2022-04-10 10:10:11.217 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2022-04-10 10:10:11.217 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2022-04-10 10:10:11.217 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2022-04-10 10:10:11.217 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2022-04-10 10:10:11.217 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 500, 0, 其它, 500
+2022-04-10 10:10:11.218 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2022-04-10 10:10:11.218 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2022-04-10 10:10:11.218 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 503, 500, 热门服务端语言, 503
+2022-04-10 10:10:11.218 DEBUG c.zexi.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m <==      Total: 15
+2022-04-10 10:10:11.218 INFO  com.zexi.wiki.aspect.LogAspect                    :75   [32m                  [0;39m 返回结果: {"content":[{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":500,"name":"其它","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502},{"id":503,"name":"热门服务端语言","parent":500,"sort":503}],"success":true}
+2022-04-10 10:10:11.219 INFO  com.zexi.wiki.aspect.LogAspect                    :76   [32m                  [0;39m ------------- 结束 耗时：36 ms -------------
+2022-04-10 10:10:12.377 INFO  com.zexi.wiki.aspect.LogAspect                    :40   [32m                  [0;39m ------------- 开始 -------------
+2022-04-10 10:10:12.377 INFO  com.zexi.wiki.aspect.LogAspect                    :41   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2022-04-10 10:10:12.378 INFO  com.zexi.wiki.aspect.LogAspect                    :42   [32m                  [0;39m 类名方法: com.zexi.wiki.controller.CategoryController.all
+2022-04-10 10:10:12.378 INFO  com.zexi.wiki.aspect.LogAspect                    :43   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-04-10 10:10:12.378 INFO  com.zexi.wiki.aspect.LogAspect                    :63   [32m                  [0;39m 请求参数: []
+2022-04-10 10:10:12.401 DEBUG c.zexi.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2022-04-10 10:10:12.401 DEBUG c.zexi.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 
+2022-04-10 10:10:12.421 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2022-04-10 10:10:12.421 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2022-04-10 10:10:12.422 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2022-04-10 10:10:12.422 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2022-04-10 10:10:12.422 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2022-04-10 10:10:12.422 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2022-04-10 10:10:12.423 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 202, 200, 框架应用, 202
+2022-04-10 10:10:12.423 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2022-04-10 10:10:12.423 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2022-04-10 10:10:12.424 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2022-04-10 10:10:12.424 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2022-04-10 10:10:12.424 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2022-04-10 10:10:12.424 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 500, 0, 其它, 500
+2022-04-10 10:10:12.424 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2022-04-10 10:10:12.424 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2022-04-10 10:10:12.425 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 503, 500, 热门服务端语言, 503
+2022-04-10 10:10:12.425 DEBUG c.zexi.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m <==      Total: 15
+2022-04-10 10:10:12.425 INFO  com.zexi.wiki.aspect.LogAspect                    :75   [32m                  [0;39m 返回结果: {"content":[{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":500,"name":"其它","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502},{"id":503,"name":"热门服务端语言","parent":500,"sort":503}],"success":true}
+2022-04-10 10:10:12.425 INFO  com.zexi.wiki.aspect.LogAspect                    :76   [32m                  [0;39m ------------- 结束 耗时：48 ms -------------
+2022-04-10 10:10:12.436 INFO  com.zexi.wiki.aspect.LogAspect                    :40   [32m                  [0;39m ------------- 开始 -------------
+2022-04-10 10:10:12.436 INFO  com.zexi.wiki.aspect.LogAspect                    :41   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-04-10 10:10:12.436 INFO  com.zexi.wiki.aspect.LogAspect                    :42   [32m                  [0;39m 类名方法: com.zexi.wiki.controller.EbookController.list
+2022-04-10 10:10:12.436 INFO  com.zexi.wiki.aspect.LogAspect                    :43   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-04-10 10:10:12.436 INFO  com.zexi.wiki.aspect.LogAspect                    :63   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2022-04-10 10:10:12.438 DEBUG c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-04-10 10:10:12.438 DEBUG c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2022-04-10 10:10:12.451 TRACE c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2022-04-10 10:10:12.451 TRACE c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 5
+2022-04-10 10:10:12.451 DEBUG c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2022-04-10 10:10:12.452 DEBUG com.zexi.wiki.mapper.EbookMapper.selectByExample  :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-04-10 10:10:12.452 DEBUG com.zexi.wiki.mapper.EbookMapper.selectByExample  :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2022-04-10 10:10:12.468 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-04-10 10:10:12.468 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 1, Spring Boot 入门教程, null, null, 零基础入门 Java 开发，企业级应用开发最佳首选框架, null, null, null, null
+2022-04-10 10:10:12.469 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 2, Vue 入门教程, null, null, 零基础入门 Vue 开发，企业级应用开发最佳首选框架, null, null, null, null
+2022-04-10 10:10:12.469 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 3, Python 入门教程, null, null, 零基础入门 Python 开发，企业级应用开发最佳首选框架, null, null, null, null
+2022-04-10 10:10:12.469 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 4, Mysql 入门教程, null, null, 零基础入门 Mysql 开发，企业级应用开发最佳首选框架, null, null, null, null
+2022-04-10 10:10:12.470 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 5, Oracle 入门教程, null, null, 零基础入门 Oracle 开发，企业级应用开发最佳首选框架, null, null, null, null
+2022-04-10 10:10:12.470 DEBUG com.zexi.wiki.mapper.EbookMapper.selectByExample  :137  [32m                  [0;39m <==      Total: 5
+2022-04-10 10:10:12.470 INFO  com.zexi.wiki.service.EbookService                :46   [32m                  [0;39m 总行数：5
+2022-04-10 10:10:12.470 INFO  com.zexi.wiki.service.EbookService                :47   [32m                  [0;39m 总页数：1
+2022-04-10 10:10:12.473 INFO  com.zexi.wiki.aspect.LogAspect                    :75   [32m                  [0;39m 返回结果: {"content":{"list":[{"description":"零基础入门 Java 开发，企业级应用开发最佳首选框架","id":1,"name":"Spring Boot 入门教程"},{"description":"零基础入门 Vue 开发，企业级应用开发最佳首选框架","id":2,"name":"Vue 入门教程"},{"description":"零基础入门 Python 开发，企业级应用开发最佳首选框架","id":3,"name":"Python 入门教程"},{"description":"零基础入门 Mysql 开发，企业级应用开发最佳首选框架","id":4,"name":"Mysql 入门教程"},{"description":"零基础入门 Oracle 开发，企业级应用开发最佳首选框架","id":5,"name":"Oracle 入门教程"}],"total":5},"success":true}
+2022-04-10 10:10:12.474 INFO  com.zexi.wiki.aspect.LogAspect                    :76   [32m                  [0;39m ------------- 结束 耗时：38 ms -------------
+2022-04-10 10:10:12.999 INFO  com.zexi.wiki.aspect.LogAspect                    :40   [32m                  [0;39m ------------- 开始 -------------
+2022-04-10 10:10:13.000 INFO  com.zexi.wiki.aspect.LogAspect                    :41   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2022-04-10 10:10:13.000 INFO  com.zexi.wiki.aspect.LogAspect                    :42   [32m                  [0;39m 类名方法: com.zexi.wiki.controller.CategoryController.all
+2022-04-10 10:10:13.000 INFO  com.zexi.wiki.aspect.LogAspect                    :43   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-04-10 10:10:13.000 INFO  com.zexi.wiki.aspect.LogAspect                    :63   [32m                  [0;39m 请求参数: []
+2022-04-10 10:10:13.021 DEBUG c.zexi.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2022-04-10 10:10:13.022 DEBUG c.zexi.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 
+2022-04-10 10:10:13.042 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2022-04-10 10:10:13.042 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2022-04-10 10:10:13.042 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2022-04-10 10:10:13.042 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2022-04-10 10:10:13.042 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2022-04-10 10:10:13.042 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2022-04-10 10:10:13.043 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 202, 200, 框架应用, 202
+2022-04-10 10:10:13.043 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2022-04-10 10:10:13.043 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2022-04-10 10:10:13.043 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2022-04-10 10:10:13.043 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2022-04-10 10:10:13.043 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2022-04-10 10:10:13.043 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 500, 0, 其它, 500
+2022-04-10 10:10:13.044 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2022-04-10 10:10:13.044 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2022-04-10 10:10:13.044 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 503, 500, 热门服务端语言, 503
+2022-04-10 10:10:13.044 DEBUG c.zexi.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m <==      Total: 15
+2022-04-10 10:10:13.045 INFO  com.zexi.wiki.aspect.LogAspect                    :75   [32m                  [0;39m 返回结果: {"content":[{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":500,"name":"其它","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502},{"id":503,"name":"热门服务端语言","parent":500,"sort":503}],"success":true}
+2022-04-10 10:10:13.045 INFO  com.zexi.wiki.aspect.LogAspect                    :76   [32m                  [0;39m ------------- 结束 耗时：46 ms -------------
+2022-04-10 10:10:13.356 INFO  com.zexi.wiki.aspect.LogAspect                    :40   [32m                  [0;39m ------------- 开始 -------------
+2022-04-10 10:10:13.356 INFO  com.zexi.wiki.aspect.LogAspect                    :41   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2022-04-10 10:10:13.356 INFO  com.zexi.wiki.aspect.LogAspect                    :42   [32m                  [0;39m 类名方法: com.zexi.wiki.controller.CategoryController.all
+2022-04-10 10:10:13.356 INFO  com.zexi.wiki.aspect.LogAspect                    :43   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-04-10 10:10:13.356 INFO  com.zexi.wiki.aspect.LogAspect                    :63   [32m                  [0;39m 请求参数: []
+2022-04-10 10:10:13.357 DEBUG c.zexi.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2022-04-10 10:10:13.357 DEBUG c.zexi.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 
+2022-04-10 10:10:13.380 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2022-04-10 10:10:13.380 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2022-04-10 10:10:13.381 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2022-04-10 10:10:13.381 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2022-04-10 10:10:13.381 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2022-04-10 10:10:13.381 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2022-04-10 10:10:13.381 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 202, 200, 框架应用, 202
+2022-04-10 10:10:13.382 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2022-04-10 10:10:13.382 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2022-04-10 10:10:13.382 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2022-04-10 10:10:13.382 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2022-04-10 10:10:13.382 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2022-04-10 10:10:13.383 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 500, 0, 其它, 500
+2022-04-10 10:10:13.383 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2022-04-10 10:10:13.383 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2022-04-10 10:10:13.383 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 503, 500, 热门服务端语言, 503
+2022-04-10 10:10:13.383 DEBUG c.zexi.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m <==      Total: 15
+2022-04-10 10:10:13.385 INFO  com.zexi.wiki.aspect.LogAspect                    :75   [32m                  [0;39m 返回结果: {"content":[{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":500,"name":"其它","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502},{"id":503,"name":"热门服务端语言","parent":500,"sort":503}],"success":true}
+2022-04-10 10:10:13.386 INFO  com.zexi.wiki.aspect.LogAspect                    :76   [32m                  [0;39m ------------- 结束 耗时：30 ms -------------
+2022-04-10 10:10:13.405 INFO  com.zexi.wiki.aspect.LogAspect                    :40   [32m                  [0;39m ------------- 开始 -------------
+2022-04-10 10:10:13.405 INFO  com.zexi.wiki.aspect.LogAspect                    :41   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-04-10 10:10:13.405 INFO  com.zexi.wiki.aspect.LogAspect                    :42   [32m                  [0;39m 类名方法: com.zexi.wiki.controller.EbookController.list
+2022-04-10 10:10:13.405 INFO  com.zexi.wiki.aspect.LogAspect                    :43   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-04-10 10:10:13.405 INFO  com.zexi.wiki.aspect.LogAspect                    :63   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2022-04-10 10:10:13.406 DEBUG c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-04-10 10:10:13.407 DEBUG c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2022-04-10 10:10:13.421 TRACE c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2022-04-10 10:10:13.421 TRACE c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 5
+2022-04-10 10:10:13.421 DEBUG c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2022-04-10 10:10:13.422 DEBUG com.zexi.wiki.mapper.EbookMapper.selectByExample  :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-04-10 10:10:13.422 DEBUG com.zexi.wiki.mapper.EbookMapper.selectByExample  :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2022-04-10 10:10:13.440 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-04-10 10:10:13.440 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 1, Spring Boot 入门教程, null, null, 零基础入门 Java 开发，企业级应用开发最佳首选框架, null, null, null, null
+2022-04-10 10:10:13.440 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 2, Vue 入门教程, null, null, 零基础入门 Vue 开发，企业级应用开发最佳首选框架, null, null, null, null
+2022-04-10 10:10:13.440 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 3, Python 入门教程, null, null, 零基础入门 Python 开发，企业级应用开发最佳首选框架, null, null, null, null
+2022-04-10 10:10:13.441 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 4, Mysql 入门教程, null, null, 零基础入门 Mysql 开发，企业级应用开发最佳首选框架, null, null, null, null
+2022-04-10 10:10:13.441 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 5, Oracle 入门教程, null, null, 零基础入门 Oracle 开发，企业级应用开发最佳首选框架, null, null, null, null
+2022-04-10 10:10:13.441 DEBUG com.zexi.wiki.mapper.EbookMapper.selectByExample  :137  [32m                  [0;39m <==      Total: 5
+2022-04-10 10:10:13.441 INFO  com.zexi.wiki.service.EbookService                :46   [32m                  [0;39m 总行数：5
+2022-04-10 10:10:13.441 INFO  com.zexi.wiki.service.EbookService                :47   [32m                  [0;39m 总页数：1
+2022-04-10 10:10:13.442 INFO  com.zexi.wiki.aspect.LogAspect                    :75   [32m                  [0;39m 返回结果: {"content":{"list":[{"description":"零基础入门 Java 开发，企业级应用开发最佳首选框架","id":1,"name":"Spring Boot 入门教程"},{"description":"零基础入门 Vue 开发，企业级应用开发最佳首选框架","id":2,"name":"Vue 入门教程"},{"description":"零基础入门 Python 开发，企业级应用开发最佳首选框架","id":3,"name":"Python 入门教程"},{"description":"零基础入门 Mysql 开发，企业级应用开发最佳首选框架","id":4,"name":"Mysql 入门教程"},{"description":"零基础入门 Oracle 开发，企业级应用开发最佳首选框架","id":5,"name":"Oracle 入门教程"}],"total":5},"success":true}
+2022-04-10 10:10:13.442 INFO  com.zexi.wiki.aspect.LogAspect                    :76   [32m                  [0;39m ------------- 结束 耗时：37 ms -------------
+2022-04-10 10:10:13.762 INFO  com.zexi.wiki.aspect.LogAspect                    :40   [32m                  [0;39m ------------- 开始 -------------
+2022-04-10 10:10:13.762 INFO  com.zexi.wiki.aspect.LogAspect                    :41   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2022-04-10 10:10:13.762 INFO  com.zexi.wiki.aspect.LogAspect                    :42   [32m                  [0;39m 类名方法: com.zexi.wiki.controller.CategoryController.all
+2022-04-10 10:10:13.762 INFO  com.zexi.wiki.aspect.LogAspect                    :43   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-04-10 10:10:13.762 INFO  com.zexi.wiki.aspect.LogAspect                    :63   [32m                  [0;39m 请求参数: []
+2022-04-10 10:10:13.763 DEBUG c.zexi.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2022-04-10 10:10:13.763 DEBUG c.zexi.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 
+2022-04-10 10:10:13.784 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2022-04-10 10:10:13.784 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2022-04-10 10:10:13.784 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2022-04-10 10:10:13.784 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2022-04-10 10:10:13.785 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2022-04-10 10:10:13.785 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2022-04-10 10:10:13.785 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 202, 200, 框架应用, 202
+2022-04-10 10:10:13.785 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2022-04-10 10:10:13.785 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2022-04-10 10:10:13.785 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2022-04-10 10:10:13.785 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2022-04-10 10:10:13.786 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2022-04-10 10:10:13.786 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 500, 0, 其它, 500
+2022-04-10 10:10:13.786 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2022-04-10 10:10:13.786 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2022-04-10 10:10:13.786 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 503, 500, 热门服务端语言, 503
+2022-04-10 10:10:13.786 DEBUG c.zexi.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m <==      Total: 15
+2022-04-10 10:10:13.787 INFO  com.zexi.wiki.aspect.LogAspect                    :75   [32m                  [0;39m 返回结果: {"content":[{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":500,"name":"其它","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502},{"id":503,"name":"热门服务端语言","parent":500,"sort":503}],"success":true}
+2022-04-10 10:10:13.787 INFO  com.zexi.wiki.aspect.LogAspect                    :76   [32m                  [0;39m ------------- 结束 耗时：26 ms -------------
+2022-04-10 10:10:15.477 INFO  com.zexi.wiki.aspect.LogAspect                    :40   [32m                  [0;39m ------------- 开始 -------------
+2022-04-10 10:10:15.477 INFO  com.zexi.wiki.aspect.LogAspect                    :41   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2022-04-10 10:10:15.477 INFO  com.zexi.wiki.aspect.LogAspect                    :42   [32m                  [0;39m 类名方法: com.zexi.wiki.controller.CategoryController.all
+2022-04-10 10:10:15.478 INFO  com.zexi.wiki.aspect.LogAspect                    :43   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-04-10 10:10:15.478 INFO  com.zexi.wiki.aspect.LogAspect                    :63   [32m                  [0;39m 请求参数: []
+2022-04-10 10:10:15.498 DEBUG c.zexi.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2022-04-10 10:10:15.499 DEBUG c.zexi.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 
+2022-04-10 10:10:15.517 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2022-04-10 10:10:15.517 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2022-04-10 10:10:15.518 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2022-04-10 10:10:15.518 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2022-04-10 10:10:15.518 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2022-04-10 10:10:15.518 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2022-04-10 10:10:15.519 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 202, 200, 框架应用, 202
+2022-04-10 10:10:15.519 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2022-04-10 10:10:15.519 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2022-04-10 10:10:15.519 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2022-04-10 10:10:15.519 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2022-04-10 10:10:15.520 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2022-04-10 10:10:15.520 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 500, 0, 其它, 500
+2022-04-10 10:10:15.520 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2022-04-10 10:10:15.520 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2022-04-10 10:10:15.521 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 503, 500, 热门服务端语言, 503
+2022-04-10 10:10:15.521 DEBUG c.zexi.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m <==      Total: 15
+2022-04-10 10:10:15.522 INFO  com.zexi.wiki.aspect.LogAspect                    :75   [32m                  [0;39m 返回结果: {"content":[{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":500,"name":"其它","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502},{"id":503,"name":"热门服务端语言","parent":500,"sort":503}],"success":true}
+2022-04-10 10:10:15.522 INFO  com.zexi.wiki.aspect.LogAspect                    :76   [32m                  [0;39m ------------- 结束 耗时：45 ms -------------
+2022-04-10 10:10:15.957 INFO  com.zexi.wiki.aspect.LogAspect                    :40   [32m                  [0;39m ------------- 开始 -------------
+2022-04-10 10:10:15.957 INFO  com.zexi.wiki.aspect.LogAspect                    :41   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2022-04-10 10:10:15.957 INFO  com.zexi.wiki.aspect.LogAspect                    :42   [32m                  [0;39m 类名方法: com.zexi.wiki.controller.CategoryController.all
+2022-04-10 10:10:15.957 INFO  com.zexi.wiki.aspect.LogAspect                    :43   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-04-10 10:10:15.957 INFO  com.zexi.wiki.aspect.LogAspect                    :63   [32m                  [0;39m 请求参数: []
+2022-04-10 10:10:15.958 DEBUG c.zexi.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2022-04-10 10:10:15.958 DEBUG c.zexi.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 
+2022-04-10 10:10:15.979 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2022-04-10 10:10:15.980 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2022-04-10 10:10:15.980 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2022-04-10 10:10:15.980 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2022-04-10 10:10:15.980 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2022-04-10 10:10:15.980 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2022-04-10 10:10:15.980 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 202, 200, 框架应用, 202
+2022-04-10 10:10:15.981 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2022-04-10 10:10:15.981 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2022-04-10 10:10:15.981 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2022-04-10 10:10:15.981 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2022-04-10 10:10:15.981 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2022-04-10 10:10:15.982 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 500, 0, 其它, 500
+2022-04-10 10:10:15.982 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2022-04-10 10:10:15.982 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2022-04-10 10:10:15.982 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 503, 500, 热门服务端语言, 503
+2022-04-10 10:10:15.982 DEBUG c.zexi.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m <==      Total: 15
+2022-04-10 10:10:15.983 INFO  com.zexi.wiki.aspect.LogAspect                    :75   [32m                  [0;39m 返回结果: {"content":[{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":500,"name":"其它","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502},{"id":503,"name":"热门服务端语言","parent":500,"sort":503}],"success":true}
+2022-04-10 10:10:15.983 INFO  com.zexi.wiki.aspect.LogAspect                    :76   [32m                  [0;39m ------------- 结束 耗时：26 ms -------------
+2022-04-10 10:10:15.992 INFO  com.zexi.wiki.aspect.LogAspect                    :40   [32m                  [0;39m ------------- 开始 -------------
+2022-04-10 10:10:15.992 INFO  com.zexi.wiki.aspect.LogAspect                    :41   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-04-10 10:10:15.992 INFO  com.zexi.wiki.aspect.LogAspect                    :42   [32m                  [0;39m 类名方法: com.zexi.wiki.controller.EbookController.list
+2022-04-10 10:10:15.992 INFO  com.zexi.wiki.aspect.LogAspect                    :43   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-04-10 10:10:15.993 INFO  com.zexi.wiki.aspect.LogAspect                    :63   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2022-04-10 10:10:15.993 DEBUG c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-04-10 10:10:15.993 DEBUG c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2022-04-10 10:10:16.009 TRACE c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2022-04-10 10:10:16.009 TRACE c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 5
+2022-04-10 10:10:16.009 DEBUG c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2022-04-10 10:10:16.010 DEBUG com.zexi.wiki.mapper.EbookMapper.selectByExample  :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-04-10 10:10:16.010 DEBUG com.zexi.wiki.mapper.EbookMapper.selectByExample  :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2022-04-10 10:10:16.026 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-04-10 10:10:16.026 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 1, Spring Boot 入门教程, null, null, 零基础入门 Java 开发，企业级应用开发最佳首选框架, null, null, null, null
+2022-04-10 10:10:16.026 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 2, Vue 入门教程, null, null, 零基础入门 Vue 开发，企业级应用开发最佳首选框架, null, null, null, null
+2022-04-10 10:10:16.027 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 3, Python 入门教程, null, null, 零基础入门 Python 开发，企业级应用开发最佳首选框架, null, null, null, null
+2022-04-10 10:10:16.027 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 4, Mysql 入门教程, null, null, 零基础入门 Mysql 开发，企业级应用开发最佳首选框架, null, null, null, null
+2022-04-10 10:10:16.027 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 5, Oracle 入门教程, null, null, 零基础入门 Oracle 开发，企业级应用开发最佳首选框架, null, null, null, null
+2022-04-10 10:10:16.027 DEBUG com.zexi.wiki.mapper.EbookMapper.selectByExample  :137  [32m                  [0;39m <==      Total: 5
+2022-04-10 10:10:16.028 INFO  com.zexi.wiki.service.EbookService                :46   [32m                  [0;39m 总行数：5
+2022-04-10 10:10:16.028 INFO  com.zexi.wiki.service.EbookService                :47   [32m                  [0;39m 总页数：1
+2022-04-10 10:10:16.028 INFO  com.zexi.wiki.aspect.LogAspect                    :75   [32m                  [0;39m 返回结果: {"content":{"list":[{"description":"零基础入门 Java 开发，企业级应用开发最佳首选框架","id":1,"name":"Spring Boot 入门教程"},{"description":"零基础入门 Vue 开发，企业级应用开发最佳首选框架","id":2,"name":"Vue 入门教程"},{"description":"零基础入门 Python 开发，企业级应用开发最佳首选框架","id":3,"name":"Python 入门教程"},{"description":"零基础入门 Mysql 开发，企业级应用开发最佳首选框架","id":4,"name":"Mysql 入门教程"},{"description":"零基础入门 Oracle 开发，企业级应用开发最佳首选框架","id":5,"name":"Oracle 入门教程"}],"total":5},"success":true}
+2022-04-10 10:10:16.029 INFO  com.zexi.wiki.aspect.LogAspect                    :76   [32m                  [0;39m ------------- 结束 耗时：37 ms -------------
+2022-04-10 10:10:16.332 INFO  com.zexi.wiki.aspect.LogAspect                    :40   [32m                  [0;39m ------------- 开始 -------------
+2022-04-10 10:10:16.332 INFO  com.zexi.wiki.aspect.LogAspect                    :41   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2022-04-10 10:10:16.332 INFO  com.zexi.wiki.aspect.LogAspect                    :42   [32m                  [0;39m 类名方法: com.zexi.wiki.controller.CategoryController.all
+2022-04-10 10:10:16.332 INFO  com.zexi.wiki.aspect.LogAspect                    :43   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-04-10 10:10:16.332 INFO  com.zexi.wiki.aspect.LogAspect                    :63   [32m                  [0;39m 请求参数: []
+2022-04-10 10:10:16.333 DEBUG c.zexi.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2022-04-10 10:10:16.333 DEBUG c.zexi.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 
+2022-04-10 10:10:16.357 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2022-04-10 10:10:16.357 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2022-04-10 10:10:16.357 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2022-04-10 10:10:16.358 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2022-04-10 10:10:16.358 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2022-04-10 10:10:16.358 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2022-04-10 10:10:16.358 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 202, 200, 框架应用, 202
+2022-04-10 10:10:16.358 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2022-04-10 10:10:16.358 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2022-04-10 10:10:16.359 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2022-04-10 10:10:16.359 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2022-04-10 10:10:16.359 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2022-04-10 10:10:16.359 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 500, 0, 其它, 500
+2022-04-10 10:10:16.359 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2022-04-10 10:10:16.360 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2022-04-10 10:10:16.360 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 503, 500, 热门服务端语言, 503
+2022-04-10 10:10:16.360 DEBUG c.zexi.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m <==      Total: 15
+2022-04-10 10:10:16.361 INFO  com.zexi.wiki.aspect.LogAspect                    :75   [32m                  [0;39m 返回结果: {"content":[{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":500,"name":"其它","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502},{"id":503,"name":"热门服务端语言","parent":500,"sort":503}],"success":true}
+2022-04-10 10:10:16.361 INFO  com.zexi.wiki.aspect.LogAspect                    :76   [32m                  [0;39m ------------- 结束 耗时：29 ms -------------
+2022-04-10 10:10:18.138 INFO  com.zexi.wiki.aspect.LogAspect                    :40   [32m                  [0;39m ------------- 开始 -------------
+2022-04-10 10:10:18.138 INFO  com.zexi.wiki.aspect.LogAspect                    :41   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2022-04-10 10:10:18.138 INFO  com.zexi.wiki.aspect.LogAspect                    :42   [32m                  [0;39m 类名方法: com.zexi.wiki.controller.CategoryController.all
+2022-04-10 10:10:18.139 INFO  com.zexi.wiki.aspect.LogAspect                    :43   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-04-10 10:10:18.139 INFO  com.zexi.wiki.aspect.LogAspect                    :63   [32m                  [0;39m 请求参数: []
+2022-04-10 10:10:18.163 DEBUG c.zexi.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2022-04-10 10:10:18.163 DEBUG c.zexi.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 
+2022-04-10 10:10:18.182 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2022-04-10 10:10:18.183 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2022-04-10 10:10:18.183 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2022-04-10 10:10:18.183 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2022-04-10 10:10:18.183 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2022-04-10 10:10:18.183 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2022-04-10 10:10:18.183 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 202, 200, 框架应用, 202
+2022-04-10 10:10:18.184 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2022-04-10 10:10:18.184 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2022-04-10 10:10:18.184 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2022-04-10 10:10:18.184 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2022-04-10 10:10:18.184 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2022-04-10 10:10:18.184 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 500, 0, 其它, 500
+2022-04-10 10:10:18.185 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2022-04-10 10:10:18.185 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2022-04-10 10:10:18.185 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 503, 500, 热门服务端语言, 503
+2022-04-10 10:10:18.185 DEBUG c.zexi.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m <==      Total: 15
+2022-04-10 10:10:18.186 INFO  com.zexi.wiki.aspect.LogAspect                    :75   [32m                  [0;39m 返回结果: {"content":[{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":500,"name":"其它","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502},{"id":503,"name":"热门服务端语言","parent":500,"sort":503}],"success":true}
+2022-04-10 10:10:18.186 INFO  com.zexi.wiki.aspect.LogAspect                    :76   [32m                  [0;39m ------------- 结束 耗时：48 ms -------------
+2022-04-10 10:10:19.430 INFO  com.zexi.wiki.aspect.LogAspect                    :40   [32m                  [0;39m ------------- 开始 -------------
+2022-04-10 10:10:19.430 INFO  com.zexi.wiki.aspect.LogAspect                    :41   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2022-04-10 10:10:19.430 INFO  com.zexi.wiki.aspect.LogAspect                    :42   [32m                  [0;39m 类名方法: com.zexi.wiki.controller.CategoryController.all
+2022-04-10 10:10:19.431 INFO  com.zexi.wiki.aspect.LogAspect                    :43   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-04-10 10:10:19.431 INFO  com.zexi.wiki.aspect.LogAspect                    :63   [32m                  [0;39m 请求参数: []
+2022-04-10 10:10:19.457 DEBUG c.zexi.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2022-04-10 10:10:19.457 DEBUG c.zexi.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 
+2022-04-10 10:10:19.475 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2022-04-10 10:10:19.476 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2022-04-10 10:10:19.476 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2022-04-10 10:10:19.476 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2022-04-10 10:10:19.476 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2022-04-10 10:10:19.476 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2022-04-10 10:10:19.477 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 202, 200, 框架应用, 202
+2022-04-10 10:10:19.477 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2022-04-10 10:10:19.477 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2022-04-10 10:10:19.477 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2022-04-10 10:10:19.477 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2022-04-10 10:10:19.477 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2022-04-10 10:10:19.477 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 500, 0, 其它, 500
+2022-04-10 10:10:19.478 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2022-04-10 10:10:19.478 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2022-04-10 10:10:19.478 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 503, 500, 热门服务端语言, 503
+2022-04-10 10:10:19.478 DEBUG c.zexi.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m <==      Total: 15
+2022-04-10 10:10:19.479 INFO  com.zexi.wiki.aspect.LogAspect                    :75   [32m                  [0;39m 返回结果: {"content":[{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":500,"name":"其它","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502},{"id":503,"name":"热门服务端语言","parent":500,"sort":503}],"success":true}
+2022-04-10 10:10:19.479 INFO  com.zexi.wiki.aspect.LogAspect                    :76   [32m                  [0;39m ------------- 结束 耗时：49 ms -------------
+2022-04-10 10:10:19.758 INFO  com.zexi.wiki.aspect.LogAspect                    :40   [32m                  [0;39m ------------- 开始 -------------
+2022-04-10 10:10:19.758 INFO  com.zexi.wiki.aspect.LogAspect                    :41   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2022-04-10 10:10:19.759 INFO  com.zexi.wiki.aspect.LogAspect                    :42   [32m                  [0;39m 类名方法: com.zexi.wiki.controller.CategoryController.all
+2022-04-10 10:10:19.759 INFO  com.zexi.wiki.aspect.LogAspect                    :43   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-04-10 10:10:19.759 INFO  com.zexi.wiki.aspect.LogAspect                    :63   [32m                  [0;39m 请求参数: []
+2022-04-10 10:10:19.759 DEBUG c.zexi.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2022-04-10 10:10:19.759 DEBUG c.zexi.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 
+2022-04-10 10:10:19.775 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2022-04-10 10:10:19.775 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2022-04-10 10:10:19.775 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2022-04-10 10:10:19.776 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2022-04-10 10:10:19.776 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2022-04-10 10:10:19.776 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2022-04-10 10:10:19.776 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 202, 200, 框架应用, 202
+2022-04-10 10:10:19.776 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2022-04-10 10:10:19.776 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2022-04-10 10:10:19.776 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2022-04-10 10:10:19.776 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2022-04-10 10:10:19.777 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2022-04-10 10:10:19.777 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 500, 0, 其它, 500
+2022-04-10 10:10:19.777 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2022-04-10 10:10:19.777 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2022-04-10 10:10:19.777 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 503, 500, 热门服务端语言, 503
+2022-04-10 10:10:19.777 DEBUG c.zexi.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m <==      Total: 15
+2022-04-10 10:10:19.778 INFO  com.zexi.wiki.aspect.LogAspect                    :75   [32m                  [0;39m 返回结果: {"content":[{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":500,"name":"其它","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502},{"id":503,"name":"热门服务端语言","parent":500,"sort":503}],"success":true}
+2022-04-10 10:10:19.778 INFO  com.zexi.wiki.aspect.LogAspect                    :76   [32m                  [0;39m ------------- 结束 耗时：20 ms -------------
+2022-04-10 10:10:19.787 INFO  com.zexi.wiki.aspect.LogAspect                    :40   [32m                  [0;39m ------------- 开始 -------------
+2022-04-10 10:10:19.787 INFO  com.zexi.wiki.aspect.LogAspect                    :41   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-04-10 10:10:19.787 INFO  com.zexi.wiki.aspect.LogAspect                    :42   [32m                  [0;39m 类名方法: com.zexi.wiki.controller.EbookController.list
+2022-04-10 10:10:19.787 INFO  com.zexi.wiki.aspect.LogAspect                    :43   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-04-10 10:10:19.788 INFO  com.zexi.wiki.aspect.LogAspect                    :63   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2022-04-10 10:10:19.789 DEBUG c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-04-10 10:10:19.789 DEBUG c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2022-04-10 10:10:19.803 TRACE c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2022-04-10 10:10:19.803 TRACE c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 5
+2022-04-10 10:10:19.803 DEBUG c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2022-04-10 10:10:19.803 DEBUG com.zexi.wiki.mapper.EbookMapper.selectByExample  :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-04-10 10:10:19.804 DEBUG com.zexi.wiki.mapper.EbookMapper.selectByExample  :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2022-04-10 10:10:19.821 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-04-10 10:10:19.821 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 1, Spring Boot 入门教程, null, null, 零基础入门 Java 开发，企业级应用开发最佳首选框架, null, null, null, null
+2022-04-10 10:10:19.822 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 2, Vue 入门教程, null, null, 零基础入门 Vue 开发，企业级应用开发最佳首选框架, null, null, null, null
+2022-04-10 10:10:19.822 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 3, Python 入门教程, null, null, 零基础入门 Python 开发，企业级应用开发最佳首选框架, null, null, null, null
+2022-04-10 10:10:19.822 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 4, Mysql 入门教程, null, null, 零基础入门 Mysql 开发，企业级应用开发最佳首选框架, null, null, null, null
+2022-04-10 10:10:19.822 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 5, Oracle 入门教程, null, null, 零基础入门 Oracle 开发，企业级应用开发最佳首选框架, null, null, null, null
+2022-04-10 10:10:19.822 DEBUG com.zexi.wiki.mapper.EbookMapper.selectByExample  :137  [32m                  [0;39m <==      Total: 5
+2022-04-10 10:10:19.823 INFO  com.zexi.wiki.service.EbookService                :46   [32m                  [0;39m 总行数：5
+2022-04-10 10:10:19.823 INFO  com.zexi.wiki.service.EbookService                :47   [32m                  [0;39m 总页数：1
+2022-04-10 10:10:19.823 INFO  com.zexi.wiki.aspect.LogAspect                    :75   [32m                  [0;39m 返回结果: {"content":{"list":[{"description":"零基础入门 Java 开发，企业级应用开发最佳首选框架","id":1,"name":"Spring Boot 入门教程"},{"description":"零基础入门 Vue 开发，企业级应用开发最佳首选框架","id":2,"name":"Vue 入门教程"},{"description":"零基础入门 Python 开发，企业级应用开发最佳首选框架","id":3,"name":"Python 入门教程"},{"description":"零基础入门 Mysql 开发，企业级应用开发最佳首选框架","id":4,"name":"Mysql 入门教程"},{"description":"零基础入门 Oracle 开发，企业级应用开发最佳首选框架","id":5,"name":"Oracle 入门教程"}],"total":5},"success":true}
+2022-04-10 10:10:19.823 INFO  com.zexi.wiki.aspect.LogAspect                    :76   [32m                  [0;39m ------------- 结束 耗时：36 ms -------------
+2022-04-10 10:10:20.133 INFO  com.zexi.wiki.aspect.LogAspect                    :40   [32m                  [0;39m ------------- 开始 -------------
+2022-04-10 10:10:20.133 INFO  com.zexi.wiki.aspect.LogAspect                    :41   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2022-04-10 10:10:20.133 INFO  com.zexi.wiki.aspect.LogAspect                    :42   [32m                  [0;39m 类名方法: com.zexi.wiki.controller.CategoryController.all
+2022-04-10 10:10:20.133 INFO  com.zexi.wiki.aspect.LogAspect                    :43   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-04-10 10:10:20.134 INFO  com.zexi.wiki.aspect.LogAspect                    :63   [32m                  [0;39m 请求参数: []
+2022-04-10 10:10:20.134 DEBUG c.zexi.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2022-04-10 10:10:20.134 DEBUG c.zexi.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 
+2022-04-10 10:10:20.149 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2022-04-10 10:10:20.149 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2022-04-10 10:10:20.150 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2022-04-10 10:10:20.150 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2022-04-10 10:10:20.150 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2022-04-10 10:10:20.151 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2022-04-10 10:10:20.151 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 202, 200, 框架应用, 202
+2022-04-10 10:10:20.151 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2022-04-10 10:10:20.151 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2022-04-10 10:10:20.151 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2022-04-10 10:10:20.152 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2022-04-10 10:10:20.152 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2022-04-10 10:10:20.152 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 500, 0, 其它, 500
+2022-04-10 10:10:20.152 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2022-04-10 10:10:20.152 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2022-04-10 10:10:20.152 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 503, 500, 热门服务端语言, 503
+2022-04-10 10:10:20.152 DEBUG c.zexi.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m <==      Total: 15
+2022-04-10 10:10:20.153 INFO  com.zexi.wiki.aspect.LogAspect                    :75   [32m                  [0;39m 返回结果: {"content":[{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":500,"name":"其它","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502},{"id":503,"name":"热门服务端语言","parent":500,"sort":503}],"success":true}
+2022-04-10 10:10:20.153 INFO  com.zexi.wiki.aspect.LogAspect                    :76   [32m                  [0;39m ------------- 结束 耗时：20 ms -------------
+2022-04-10 10:11:10.469 INFO  com.zexi.wiki.aspect.LogAspect                    :40   [32m                  [0;39m ------------- 开始 -------------
+2022-04-10 10:11:10.475 INFO  com.zexi.wiki.aspect.LogAspect                    :41   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2022-04-10 10:11:10.475 INFO  com.zexi.wiki.aspect.LogAspect                    :42   [32m                  [0;39m 类名方法: com.zexi.wiki.controller.CategoryController.all
+2022-04-10 10:11:10.476 INFO  com.zexi.wiki.aspect.LogAspect                    :43   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-04-10 10:11:10.476 INFO  com.zexi.wiki.aspect.LogAspect                    :63   [32m                  [0;39m 请求参数: []
+2022-04-10 10:11:10.492 DEBUG c.zexi.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2022-04-10 10:11:10.493 DEBUG c.zexi.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 
+2022-04-10 10:11:10.513 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2022-04-10 10:11:10.513 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2022-04-10 10:11:10.514 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2022-04-10 10:11:10.514 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2022-04-10 10:11:10.514 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2022-04-10 10:11:10.514 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2022-04-10 10:11:10.515 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 202, 200, 框架应用, 202
+2022-04-10 10:11:10.515 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2022-04-10 10:11:10.515 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2022-04-10 10:11:10.515 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2022-04-10 10:11:10.515 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2022-04-10 10:11:10.515 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2022-04-10 10:11:10.516 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 500, 0, 其它, 500
+2022-04-10 10:11:10.516 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2022-04-10 10:11:10.516 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2022-04-10 10:11:10.516 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 503, 500, 热门服务端语言, 503
+2022-04-10 10:11:10.516 DEBUG c.zexi.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m <==      Total: 15
+2022-04-10 10:11:10.517 INFO  com.zexi.wiki.aspect.LogAspect                    :75   [32m                  [0;39m 返回结果: {"content":[{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":500,"name":"其它","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502},{"id":503,"name":"热门服务端语言","parent":500,"sort":503}],"success":true}
+2022-04-10 10:11:10.517 INFO  com.zexi.wiki.aspect.LogAspect                    :76   [32m                  [0;39m ------------- 结束 耗时：48 ms -------------
+2022-04-10 10:11:10.527 INFO  com.zexi.wiki.aspect.LogAspect                    :40   [32m                  [0;39m ------------- 开始 -------------
+2022-04-10 10:11:10.527 INFO  com.zexi.wiki.aspect.LogAspect                    :41   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-04-10 10:11:10.527 INFO  com.zexi.wiki.aspect.LogAspect                    :42   [32m                  [0;39m 类名方法: com.zexi.wiki.controller.EbookController.list
+2022-04-10 10:11:10.527 INFO  com.zexi.wiki.aspect.LogAspect                    :43   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-04-10 10:11:10.528 INFO  com.zexi.wiki.aspect.LogAspect                    :63   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2022-04-10 10:11:10.529 DEBUG c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-04-10 10:11:10.529 DEBUG c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2022-04-10 10:11:10.544 TRACE c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2022-04-10 10:11:10.545 TRACE c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 5
+2022-04-10 10:11:10.545 DEBUG c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2022-04-10 10:11:10.546 DEBUG com.zexi.wiki.mapper.EbookMapper.selectByExample  :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-04-10 10:11:10.546 DEBUG com.zexi.wiki.mapper.EbookMapper.selectByExample  :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2022-04-10 10:11:10.564 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-04-10 10:11:10.565 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 1, Spring Boot 入门教程, null, null, 零基础入门 Java 开发，企业级应用开发最佳首选框架, null, null, null, null
+2022-04-10 10:11:10.565 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 2, Vue 入门教程, null, null, 零基础入门 Vue 开发，企业级应用开发最佳首选框架, null, null, null, null
+2022-04-10 10:11:10.565 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 3, Python 入门教程, null, null, 零基础入门 Python 开发，企业级应用开发最佳首选框架, null, null, null, null
+2022-04-10 10:11:10.565 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 4, Mysql 入门教程, null, null, 零基础入门 Mysql 开发，企业级应用开发最佳首选框架, null, null, null, null
+2022-04-10 10:11:10.565 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 5, Oracle 入门教程, null, null, 零基础入门 Oracle 开发，企业级应用开发最佳首选框架, null, null, null, null
+2022-04-10 10:11:10.566 DEBUG com.zexi.wiki.mapper.EbookMapper.selectByExample  :137  [32m                  [0;39m <==      Total: 5
+2022-04-10 10:11:10.566 INFO  com.zexi.wiki.service.EbookService                :46   [32m                  [0;39m 总行数：5
+2022-04-10 10:11:10.566 INFO  com.zexi.wiki.service.EbookService                :47   [32m                  [0;39m 总页数：1
+2022-04-10 10:11:10.566 INFO  com.zexi.wiki.aspect.LogAspect                    :75   [32m                  [0;39m 返回结果: {"content":{"list":[{"description":"零基础入门 Java 开发，企业级应用开发最佳首选框架","id":1,"name":"Spring Boot 入门教程"},{"description":"零基础入门 Vue 开发，企业级应用开发最佳首选框架","id":2,"name":"Vue 入门教程"},{"description":"零基础入门 Python 开发，企业级应用开发最佳首选框架","id":3,"name":"Python 入门教程"},{"description":"零基础入门 Mysql 开发，企业级应用开发最佳首选框架","id":4,"name":"Mysql 入门教程"},{"description":"零基础入门 Oracle 开发，企业级应用开发最佳首选框架","id":5,"name":"Oracle 入门教程"}],"total":5},"success":true}
+2022-04-10 10:11:10.567 INFO  com.zexi.wiki.aspect.LogAspect                    :76   [32m                  [0;39m ------------- 结束 耗时：40 ms -------------
+2022-04-10 10:11:11.861 INFO  com.zexi.wiki.aspect.LogAspect                    :40   [32m                  [0;39m ------------- 开始 -------------
+2022-04-10 10:11:11.903 INFO  com.zexi.wiki.aspect.LogAspect                    :41   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/doc/all GET
+2022-04-10 10:11:11.903 INFO  com.zexi.wiki.aspect.LogAspect                    :42   [32m                  [0;39m 类名方法: com.zexi.wiki.controller.DocController.all
+2022-04-10 10:11:11.903 INFO  com.zexi.wiki.aspect.LogAspect                    :43   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-04-10 10:11:11.904 INFO  com.zexi.wiki.aspect.LogAspect                    :63   [32m                  [0;39m 请求参数: []
+2022-04-10 10:11:11.930 DEBUG com.zexi.wiki.mapper.DocMapper.selectByExample    :137  [32m                  [0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc order by sort asc
+2022-04-10 10:11:11.930 DEBUG com.zexi.wiki.mapper.DocMapper.selectByExample    :137  [32m                  [0;39m ==> Parameters: 
+2022-04-10 10:11:11.948 TRACE com.zexi.wiki.mapper.DocMapper.selectByExample    :143  [32m                  [0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2022-04-10 10:11:11.958 TRACE com.zexi.wiki.mapper.DocMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 1, 1, 0, 文档1, 1, 0, 0
+2022-04-10 10:11:11.958 TRACE com.zexi.wiki.mapper.DocMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 2, 1, 1, 文档1.1, 1, 0, 0
+2022-04-10 10:11:11.958 TRACE com.zexi.wiki.mapper.DocMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 4, 1, 3, 文档2.1, 1, 0, 0
+2022-04-10 10:11:11.963 TRACE com.zexi.wiki.mapper.DocMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 6, 1, 5, 文档2.2.1, 1, 0, 0
+2022-04-10 10:11:11.964 TRACE com.zexi.wiki.mapper.DocMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 3, 1, 0, 文档2, 2, 0, 0
+2022-04-10 10:11:11.964 TRACE com.zexi.wiki.mapper.DocMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 5, 1, 3, 文档2.2, 2, 0, 0
+2022-04-10 10:11:11.964 DEBUG com.zexi.wiki.mapper.DocMapper.selectByExample    :137  [32m                  [0;39m <==      Total: 6
+2022-04-10 10:11:11.970 INFO  com.zexi.wiki.aspect.LogAspect                    :75   [32m                  [0;39m 返回结果: {"content":[{"ebookId":1,"id":1,"name":"文档1","parent":0,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":2,"name":"文档1.1","parent":1,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":4,"name":"文档2.1","parent":3,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":6,"name":"文档2.2.1","parent":5,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":3,"name":"文档2","parent":0,"sort":2,"viewCount":0,"voteCount":0},{"ebookId":1,"id":5,"name":"文档2.2","parent":3,"sort":2,"viewCount":0,"voteCount":0}],"success":true}
+2022-04-10 10:11:11.971 INFO  com.zexi.wiki.aspect.LogAspect                    :76   [32m                  [0;39m ------------- 结束 耗时：110 ms -------------
+2022-04-10 10:11:13.872 INFO  com.zexi.wiki.aspect.LogAspect                    :40   [32m                  [0;39m ------------- 开始 -------------
+2022-04-10 10:11:13.872 INFO  com.zexi.wiki.aspect.LogAspect                    :41   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2022-04-10 10:11:13.872 INFO  com.zexi.wiki.aspect.LogAspect                    :42   [32m                  [0;39m 类名方法: com.zexi.wiki.controller.CategoryController.all
+2022-04-10 10:11:13.873 INFO  com.zexi.wiki.aspect.LogAspect                    :43   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-04-10 10:11:13.873 INFO  com.zexi.wiki.aspect.LogAspect                    :63   [32m                  [0;39m 请求参数: []
+2022-04-10 10:11:13.894 DEBUG c.zexi.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2022-04-10 10:11:13.895 DEBUG c.zexi.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 
+2022-04-10 10:11:13.915 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2022-04-10 10:11:13.915 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2022-04-10 10:11:13.916 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2022-04-10 10:11:13.916 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2022-04-10 10:11:13.916 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2022-04-10 10:11:13.916 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2022-04-10 10:11:13.916 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 202, 200, 框架应用, 202
+2022-04-10 10:11:13.916 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2022-04-10 10:11:13.916 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2022-04-10 10:11:13.917 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2022-04-10 10:11:13.917 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2022-04-10 10:11:13.917 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2022-04-10 10:11:13.917 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 500, 0, 其它, 500
+2022-04-10 10:11:13.917 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2022-04-10 10:11:13.917 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2022-04-10 10:11:13.917 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 503, 500, 热门服务端语言, 503
+2022-04-10 10:11:13.918 DEBUG c.zexi.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m <==      Total: 15
+2022-04-10 10:11:13.918 INFO  com.zexi.wiki.aspect.LogAspect                    :75   [32m                  [0;39m 返回结果: {"content":[{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":500,"name":"其它","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502},{"id":503,"name":"热门服务端语言","parent":500,"sort":503}],"success":true}
+2022-04-10 10:11:13.918 INFO  com.zexi.wiki.aspect.LogAspect                    :76   [32m                  [0;39m ------------- 结束 耗时：46 ms -------------
+2022-04-10 10:11:13.927 INFO  com.zexi.wiki.aspect.LogAspect                    :40   [32m                  [0;39m ------------- 开始 -------------
+2022-04-10 10:11:13.927 INFO  com.zexi.wiki.aspect.LogAspect                    :41   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-04-10 10:11:13.927 INFO  com.zexi.wiki.aspect.LogAspect                    :42   [32m                  [0;39m 类名方法: com.zexi.wiki.controller.EbookController.list
+2022-04-10 10:11:13.927 INFO  com.zexi.wiki.aspect.LogAspect                    :43   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-04-10 10:11:13.927 INFO  com.zexi.wiki.aspect.LogAspect                    :63   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2022-04-10 10:11:13.928 DEBUG c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-04-10 10:11:13.928 DEBUG c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2022-04-10 10:11:13.942 TRACE c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2022-04-10 10:11:13.942 TRACE c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 5
+2022-04-10 10:11:13.942 DEBUG c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2022-04-10 10:11:13.942 DEBUG com.zexi.wiki.mapper.EbookMapper.selectByExample  :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-04-10 10:11:13.943 DEBUG com.zexi.wiki.mapper.EbookMapper.selectByExample  :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2022-04-10 10:11:13.958 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-04-10 10:11:13.958 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 1, Spring Boot 入门教程, null, null, 零基础入门 Java 开发，企业级应用开发最佳首选框架, null, null, null, null
+2022-04-10 10:11:13.958 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 2, Vue 入门教程, null, null, 零基础入门 Vue 开发，企业级应用开发最佳首选框架, null, null, null, null
+2022-04-10 10:11:13.958 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 3, Python 入门教程, null, null, 零基础入门 Python 开发，企业级应用开发最佳首选框架, null, null, null, null
+2022-04-10 10:11:13.958 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 4, Mysql 入门教程, null, null, 零基础入门 Mysql 开发，企业级应用开发最佳首选框架, null, null, null, null
+2022-04-10 10:11:13.959 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 5, Oracle 入门教程, null, null, 零基础入门 Oracle 开发，企业级应用开发最佳首选框架, null, null, null, null
+2022-04-10 10:11:13.959 DEBUG com.zexi.wiki.mapper.EbookMapper.selectByExample  :137  [32m                  [0;39m <==      Total: 5
+2022-04-10 10:11:13.959 INFO  com.zexi.wiki.service.EbookService                :46   [32m                  [0;39m 总行数：5
+2022-04-10 10:11:13.959 INFO  com.zexi.wiki.service.EbookService                :47   [32m                  [0;39m 总页数：1
+2022-04-10 10:11:13.959 INFO  com.zexi.wiki.aspect.LogAspect                    :75   [32m                  [0;39m 返回结果: {"content":{"list":[{"description":"零基础入门 Java 开发，企业级应用开发最佳首选框架","id":1,"name":"Spring Boot 入门教程"},{"description":"零基础入门 Vue 开发，企业级应用开发最佳首选框架","id":2,"name":"Vue 入门教程"},{"description":"零基础入门 Python 开发，企业级应用开发最佳首选框架","id":3,"name":"Python 入门教程"},{"description":"零基础入门 Mysql 开发，企业级应用开发最佳首选框架","id":4,"name":"Mysql 入门教程"},{"description":"零基础入门 Oracle 开发，企业级应用开发最佳首选框架","id":5,"name":"Oracle 入门教程"}],"total":5},"success":true}
+2022-04-10 10:11:13.960 INFO  com.zexi.wiki.aspect.LogAspect                    :76   [32m                  [0;39m ------------- 结束 耗时：33 ms -------------
+2022-04-10 10:11:15.425 INFO  com.zexi.wiki.aspect.LogAspect                    :40   [32m                  [0;39m ------------- 开始 -------------
+2022-04-10 10:11:15.426 INFO  com.zexi.wiki.aspect.LogAspect                    :41   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2022-04-10 10:11:15.426 INFO  com.zexi.wiki.aspect.LogAspect                    :42   [32m                  [0;39m 类名方法: com.zexi.wiki.controller.CategoryController.all
+2022-04-10 10:11:15.426 INFO  com.zexi.wiki.aspect.LogAspect                    :43   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-04-10 10:11:15.426 INFO  com.zexi.wiki.aspect.LogAspect                    :63   [32m                  [0;39m 请求参数: []
+2022-04-10 10:11:15.441 DEBUG c.zexi.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2022-04-10 10:11:15.442 DEBUG c.zexi.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 
+2022-04-10 10:11:15.460 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2022-04-10 10:11:15.460 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2022-04-10 10:11:15.460 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2022-04-10 10:11:15.461 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2022-04-10 10:11:15.461 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2022-04-10 10:11:15.461 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2022-04-10 10:11:15.461 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 202, 200, 框架应用, 202
+2022-04-10 10:11:15.461 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2022-04-10 10:11:15.462 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2022-04-10 10:11:15.462 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2022-04-10 10:11:15.462 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2022-04-10 10:11:15.462 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2022-04-10 10:11:15.462 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 500, 0, 其它, 500
+2022-04-10 10:11:15.462 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2022-04-10 10:11:15.462 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2022-04-10 10:11:15.463 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 503, 500, 热门服务端语言, 503
+2022-04-10 10:11:15.463 DEBUG c.zexi.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m <==      Total: 15
+2022-04-10 10:11:15.463 INFO  com.zexi.wiki.aspect.LogAspect                    :75   [32m                  [0;39m 返回结果: {"content":[{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":500,"name":"其它","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502},{"id":503,"name":"热门服务端语言","parent":500,"sort":503}],"success":true}
+2022-04-10 10:11:15.463 INFO  com.zexi.wiki.aspect.LogAspect                    :76   [32m                  [0;39m ------------- 结束 耗时：38 ms -------------
+2022-04-10 10:11:16.634 INFO  com.zexi.wiki.aspect.LogAspect                    :40   [32m                  [0;39m ------------- 开始 -------------
+2022-04-10 10:11:16.634 INFO  com.zexi.wiki.aspect.LogAspect                    :41   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2022-04-10 10:11:16.634 INFO  com.zexi.wiki.aspect.LogAspect                    :42   [32m                  [0;39m 类名方法: com.zexi.wiki.controller.CategoryController.all
+2022-04-10 10:11:16.634 INFO  com.zexi.wiki.aspect.LogAspect                    :43   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-04-10 10:11:16.634 INFO  com.zexi.wiki.aspect.LogAspect                    :63   [32m                  [0;39m 请求参数: []
+2022-04-10 10:11:16.658 DEBUG c.zexi.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2022-04-10 10:11:16.658 DEBUG c.zexi.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 
+2022-04-10 10:11:16.675 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2022-04-10 10:11:16.676 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2022-04-10 10:11:16.676 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2022-04-10 10:11:16.676 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2022-04-10 10:11:16.676 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2022-04-10 10:11:16.677 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2022-04-10 10:11:16.677 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 202, 200, 框架应用, 202
+2022-04-10 10:11:16.677 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2022-04-10 10:11:16.677 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2022-04-10 10:11:16.677 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2022-04-10 10:11:16.677 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2022-04-10 10:11:16.678 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2022-04-10 10:11:16.678 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 500, 0, 其它, 500
+2022-04-10 10:11:16.678 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2022-04-10 10:11:16.678 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2022-04-10 10:11:16.678 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 503, 500, 热门服务端语言, 503
+2022-04-10 10:11:16.678 DEBUG c.zexi.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m <==      Total: 15
+2022-04-10 10:11:16.679 INFO  com.zexi.wiki.aspect.LogAspect                    :75   [32m                  [0;39m 返回结果: {"content":[{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":500,"name":"其它","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502},{"id":503,"name":"热门服务端语言","parent":500,"sort":503}],"success":true}
+2022-04-10 10:11:16.679 INFO  com.zexi.wiki.aspect.LogAspect                    :76   [32m                  [0;39m ------------- 结束 耗时：45 ms -------------
+2022-04-10 10:11:21.696 INFO  com.zexi.wiki.aspect.LogAspect                    :40   [32m                  [0;39m ------------- 开始 -------------
+2022-04-10 10:11:21.697 INFO  com.zexi.wiki.aspect.LogAspect                    :41   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2022-04-10 10:11:21.697 INFO  com.zexi.wiki.aspect.LogAspect                    :42   [32m                  [0;39m 类名方法: com.zexi.wiki.controller.CategoryController.all
+2022-04-10 10:11:21.697 INFO  com.zexi.wiki.aspect.LogAspect                    :43   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-04-10 10:11:21.697 INFO  com.zexi.wiki.aspect.LogAspect                    :63   [32m                  [0;39m 请求参数: []
+2022-04-10 10:11:21.717 DEBUG c.zexi.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2022-04-10 10:11:21.717 DEBUG c.zexi.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 
+2022-04-10 10:11:21.738 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2022-04-10 10:11:21.738 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2022-04-10 10:11:21.738 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2022-04-10 10:11:21.739 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2022-04-10 10:11:21.739 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2022-04-10 10:11:21.739 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2022-04-10 10:11:21.739 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 202, 200, 框架应用, 202
+2022-04-10 10:11:21.739 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2022-04-10 10:11:21.739 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2022-04-10 10:11:21.739 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2022-04-10 10:11:21.740 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2022-04-10 10:11:21.740 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2022-04-10 10:11:21.740 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 500, 0, 其它, 500
+2022-04-10 10:11:21.740 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2022-04-10 10:11:21.740 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2022-04-10 10:11:21.741 TRACE c.zexi.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 503, 500, 热门服务端语言, 503
+2022-04-10 10:11:21.741 DEBUG c.zexi.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m <==      Total: 15
+2022-04-10 10:11:21.741 INFO  com.zexi.wiki.aspect.LogAspect                    :75   [32m                  [0;39m 返回结果: {"content":[{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":500,"name":"其它","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502},{"id":503,"name":"热门服务端语言","parent":500,"sort":503}],"success":true}
+2022-04-10 10:11:21.741 INFO  com.zexi.wiki.aspect.LogAspect                    :76   [32m                  [0;39m ------------- 结束 耗时：45 ms -------------
+2022-04-10 10:11:21.751 INFO  com.zexi.wiki.aspect.LogAspect                    :40   [32m                  [0;39m ------------- 开始 -------------
+2022-04-10 10:11:21.751 INFO  com.zexi.wiki.aspect.LogAspect                    :41   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-04-10 10:11:21.751 INFO  com.zexi.wiki.aspect.LogAspect                    :42   [32m                  [0;39m 类名方法: com.zexi.wiki.controller.EbookController.list
+2022-04-10 10:11:21.751 INFO  com.zexi.wiki.aspect.LogAspect                    :43   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-04-10 10:11:21.751 INFO  com.zexi.wiki.aspect.LogAspect                    :63   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2022-04-10 10:11:21.752 DEBUG c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-04-10 10:11:21.752 DEBUG c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2022-04-10 10:11:21.766 TRACE c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2022-04-10 10:11:21.767 TRACE c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 5
+2022-04-10 10:11:21.767 DEBUG c.z.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2022-04-10 10:11:21.767 DEBUG com.zexi.wiki.mapper.EbookMapper.selectByExample  :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-04-10 10:11:21.767 DEBUG com.zexi.wiki.mapper.EbookMapper.selectByExample  :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2022-04-10 10:11:21.784 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-04-10 10:11:21.784 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 1, Spring Boot 入门教程, null, null, 零基础入门 Java 开发，企业级应用开发最佳首选框架, null, null, null, null
+2022-04-10 10:11:21.784 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 2, Vue 入门教程, null, null, 零基础入门 Vue 开发，企业级应用开发最佳首选框架, null, null, null, null
+2022-04-10 10:11:21.784 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 3, Python 入门教程, null, null, 零基础入门 Python 开发，企业级应用开发最佳首选框架, null, null, null, null
+2022-04-10 10:11:21.784 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 4, Mysql 入门教程, null, null, 零基础入门 Mysql 开发，企业级应用开发最佳首选框架, null, null, null, null
+2022-04-10 10:11:21.785 TRACE com.zexi.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 5, Oracle 入门教程, null, null, 零基础入门 Oracle 开发，企业级应用开发最佳首选框架, null, null, null, null
+2022-04-10 10:11:21.785 DEBUG com.zexi.wiki.mapper.EbookMapper.selectByExample  :137  [32m                  [0;39m <==      Total: 5
+2022-04-10 10:11:21.785 INFO  com.zexi.wiki.service.EbookService                :46   [32m                  [0;39m 总行数：5
+2022-04-10 10:11:21.785 INFO  com.zexi.wiki.service.EbookService                :47   [32m                  [0;39m 总页数：1
+2022-04-10 10:11:21.785 INFO  com.zexi.wiki.aspect.LogAspect                    :75   [32m                  [0;39m 返回结果: {"content":{"list":[{"description":"零基础入门 Java 开发，企业级应用开发最佳首选框架","id":1,"name":"Spring Boot 入门教程"},{"description":"零基础入门 Vue 开发，企业级应用开发最佳首选框架","id":2,"name":"Vue 入门教程"},{"description":"零基础入门 Python 开发，企业级应用开发最佳首选框架","id":3,"name":"Python 入门教程"},{"description":"零基础入门 Mysql 开发，企业级应用开发最佳首选框架","id":4,"name":"Mysql 入门教程"},{"description":"零基础入门 Oracle 开发，企业级应用开发最佳首选框架","id":5,"name":"Oracle 入门教程"}],"total":5},"success":true}
+2022-04-10 10:11:21.785 INFO  com.zexi.wiki.aspect.LogAspect                    :76   [32m                  [0;39m ------------- 结束 耗时：34 ms -------------
+2022-04-10 10:11:23.149 INFO  com.zexi.wiki.aspect.LogAspect                    :40   [32m                  [0;39m ------------- 开始 -------------
+2022-04-10 10:11:23.150 INFO  com.zexi.wiki.aspect.LogAspect                    :41   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/doc/all GET
+2022-04-10 10:11:23.150 INFO  com.zexi.wiki.aspect.LogAspect                    :42   [32m                  [0;39m 类名方法: com.zexi.wiki.controller.DocController.all
+2022-04-10 10:11:23.150 INFO  com.zexi.wiki.aspect.LogAspect                    :43   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-04-10 10:11:23.150 INFO  com.zexi.wiki.aspect.LogAspect                    :63   [32m                  [0;39m 请求参数: []
+2022-04-10 10:11:23.173 DEBUG com.zexi.wiki.mapper.DocMapper.selectByExample    :137  [32m                  [0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc order by sort asc
+2022-04-10 10:11:23.173 DEBUG com.zexi.wiki.mapper.DocMapper.selectByExample    :137  [32m                  [0;39m ==> Parameters: 
+2022-04-10 10:11:23.193 TRACE com.zexi.wiki.mapper.DocMapper.selectByExample    :143  [32m                  [0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2022-04-10 10:11:23.193 TRACE com.zexi.wiki.mapper.DocMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 1, 1, 0, 文档1, 1, 0, 0
+2022-04-10 10:11:23.193 TRACE com.zexi.wiki.mapper.DocMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 2, 1, 1, 文档1.1, 1, 0, 0
+2022-04-10 10:11:23.194 TRACE com.zexi.wiki.mapper.DocMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 4, 1, 3, 文档2.1, 1, 0, 0
+2022-04-10 10:11:23.194 TRACE com.zexi.wiki.mapper.DocMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 6, 1, 5, 文档2.2.1, 1, 0, 0
+2022-04-10 10:11:23.194 TRACE com.zexi.wiki.mapper.DocMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 3, 1, 0, 文档2, 2, 0, 0
+2022-04-10 10:11:23.194 TRACE com.zexi.wiki.mapper.DocMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 5, 1, 3, 文档2.2, 2, 0, 0
+2022-04-10 10:11:23.194 DEBUG com.zexi.wiki.mapper.DocMapper.selectByExample    :137  [32m                  [0;39m <==      Total: 6
+2022-04-10 10:11:23.195 INFO  com.zexi.wiki.aspect.LogAspect                    :75   [32m                  [0;39m 返回结果: {"content":[{"ebookId":1,"id":1,"name":"文档1","parent":0,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":2,"name":"文档1.1","parent":1,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":4,"name":"文档2.1","parent":3,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":6,"name":"文档2.2.1","parent":5,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":3,"name":"文档2","parent":0,"sort":2,"viewCount":0,"voteCount":0},{"ebookId":1,"id":5,"name":"文档2.2","parent":3,"sort":2,"viewCount":0,"voteCount":0}],"success":true}
+2022-04-10 10:11:23.195 INFO  com.zexi.wiki.aspect.LogAspect                    :76   [32m                  [0;39m ------------- 结束 耗时：46 ms -------------
